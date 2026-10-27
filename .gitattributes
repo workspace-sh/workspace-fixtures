@@ -1,0 +1,4 @@
+# Fixtures must stay byte-for-byte what they are: no line-ending or encoding
+# normalisation, ever. A test that reads a file here compares against its exact
+# bytes.
+* -text
