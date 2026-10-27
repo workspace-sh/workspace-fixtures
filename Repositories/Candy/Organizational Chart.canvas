@@ -3,7 +3,7 @@
 		{
 			"id": "ca37bdebb0a7d2f9",
 			"type": "text",
-			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/portrait-sandra-hemings.svg|120]]</span>\n<span style=\"position:absolute; top:30; left:30\"><b>Head of Product</b><br>Sandra Hemings</span>\n\n",
+			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/portrait-sandra-hemings.jpg|90]]</span>\n<span style=\"position:absolute; top:30; left:30\"><b>Head of Product</b><br>Sandra Hemings</span>\n\n",
 			"x": -580,
 			"y": -440,
 			"width": 380,
@@ -13,7 +13,7 @@
 		{
 			"id": "025177522f3c2608",
 			"type": "text",
-			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/portrait-ana-tyler.svg|100]]</span>\n<span style=\"position:absolute; top:30; left:30\"><b>Graphics Lead</b><br>Ana Tyler</span>\n",
+			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/portrait-ana-tyler.jpg|80]]</span>\n<span style=\"position:absolute; top:30; left:30\"><b>Graphics Lead</b><br>Ana Tyler</span>\n",
 			"x": -1165,
 			"y": 220,
 			"width": 347,
@@ -23,7 +23,7 @@
 		{
 			"id": "f72290a46ed0b441",
 			"type": "text",
-			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/portrait-amy-smith.svg|120]]</span>\n<span style=\"position:absolute; top:30; left:30\"><b>Head of Design</b><br>Amy Smith</span>\n\n",
+			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/portrait-amy-smith.jpg|90]]</span>\n<span style=\"position:absolute; top:30; left:30\"><b>Head of Design</b><br>Amy Smith</span>\n\n",
 			"x": -970,
 			"y": -100,
 			"width": 380,
@@ -33,7 +33,7 @@
 		{
 			"id": "695d4cccd27ef6ab",
 			"type": "text",
-			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/portrait-tama-buccanon.svg|100]]</span>\n<span style=\"position:absolute; top:30; left:30\"><b>Project Management</b><br>Tama Buccanon</span>\n",
+			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/portrait-tama-buccanon.jpg|80]]</span>\n<span style=\"position:absolute; top:30; left:30\"><b>Project Management</b><br>Tama Buccanon</span>\n",
 			"x": -740,
 			"y": 220,
 			"width": 347,
@@ -43,7 +43,7 @@
 		{
 			"id": "766418ef9c1676c3",
 			"type": "text",
-			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/portrait-kathy-abrahams.svg|100]]</span>\n<span style=\"position:absolute; top:30; left:30\"><b>QA</b><br>Kathy Abrahams</span>\n",
+			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/portrait-kathy-abrahams.jpg|80]]</span>\n<span style=\"position:absolute; top:30; left:30\"><b>QA</b><br>Kathy Abrahams</span>\n",
 			"x": -308,
 			"y": 220,
 			"width": 347,
@@ -53,7 +53,7 @@
 		{
 			"id": "7aabc4652099f190",
 			"type": "text",
-			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/portrait-ben-koolth.svg|100]]</span>\n<span style=\"position:absolute; top:30; left:30\"><b>Dev Lead</b><br>Ben Koolth</span>\n",
+			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/portrait-ben-koolth.jpg|80]]</span>\n<span style=\"position:absolute; top:30; left:30\"><b>Dev Lead</b><br>Ben Koolth</span>\n",
 			"x": 94,
 			"y": 220,
 			"width": 347,
@@ -63,7 +63,7 @@
 		{
 			"id": "d5a9a2f33b7c2fb1",
 			"type": "text",
-			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/portrait-paula-spencer.svg|100]]</span>\n<span style=\"position:absolute; top:30; left:30\"><b>Developer</b><br>Paula Spencer</span>\n",
+			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/portrait-paula-spencer.jpg|80]]</span>\n<span style=\"position:absolute; top:30; left:30\"><b>Developer</b><br>Paula Spencer</span>\n",
 			"x": 233,
 			"y": 540,
 			"width": 347,
@@ -73,7 +73,7 @@
 		{
 			"id": "9dfa82057575f239",
 			"type": "text",
-			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/portrait-john-weaver.svg|100]]</span>\n<span style=\"position:absolute; top:30; left:30\"><b>Developer</b><br>John Weaver</span>\n",
+			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/portrait-john-weaver.jpg|80]]</span>\n<span style=\"position:absolute; top:30; left:30\"><b>Developer</b><br>John Weaver</span>\n",
 			"x": -167,
 			"y": 540,
 			"width": 347,
@@ -83,7 +83,7 @@
 		{
 			"id": "3fde407460558bfc",
 			"type": "text",
-			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/portrait-philip-portman.svg|100]]</span>\n<span style=\"position:absolute; top:30; left:30\"><b>Designer</b><br>Philip Portman</span>\n",
+			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/portrait-philip-portman.jpg|80]]</span>\n<span style=\"position:absolute; top:30; left:30\"><b>Designer</b><br>Philip Portman</span>\n",
 			"x": -1310,
 			"y": 540,
 			"width": 347,
@@ -93,7 +93,7 @@
 		{
 			"id": "e8b90b456af3245d",
 			"type": "text",
-			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/portrait-cheryl-stoope.svg|100]]<span style=\"position:absolute; top:30; left:30\"><b>Designer</b><br>Cheryl Stoope</span>\n",
+			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/portrait-cheryl-stoope.jpg|80]]<span style=\"position:absolute; top:30; left:30\"><b>Designer</b><br>Cheryl Stoope</span>\n",
 			"x": -909,
 			"y": 540,
 			"width": 347,
@@ -112,7 +112,7 @@
 		{
 			"id": "083fb39e2fefd58f",
 			"type": "text",
-			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/portrait-bart-johnson.svg|120]]</span><span style=\"position:absolute; top:30; left:30\"><b>Product Lead</b><br>Bart Johnson</span>\n",
+			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/portrait-bart-johnson.jpg|90]]</span><span style=\"position:absolute; top:30; left:30\"><b>Product Lead</b><br>Bart Johnson</span>\n",
 			"x": -151,
 			"y": -100,
 			"width": 380,
