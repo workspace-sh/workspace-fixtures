@@ -1,0 +1,315 @@
+{
+	"nodes": [
+		{
+			"id": "ca37bdebb0a7d2f9",
+			"type": "text",
+			"text": "**Head of Product**\n\nNoor Rahman",
+			"x": -580,
+			"y": -440,
+			"width": 280,
+			"height": 160,
+			"color": "2"
+		},
+		{
+			"id": "cbe9c3658c3add93",
+			"type": "file",
+			"file": "portraits/portrait-noor-rahman.jpg",
+			"x": -295,
+			"y": -428,
+			"width": 90,
+			"height": 135,
+			"color": "2"
+		},
+		{
+			"id": "025177522f3c2608",
+			"type": "text",
+			"text": "**Graphics Lead**\n\nLucía Moreno",
+			"x": -1165,
+			"y": 220,
+			"width": 247,
+			"height": 140,
+			"color": "6"
+		},
+		{
+			"id": "270ab1695dae8b41",
+			"type": "file",
+			"file": "portraits/portrait-lucia-moreno.jpg",
+			"x": -913,
+			"y": 222,
+			"width": 90,
+			"height": 135,
+			"color": "6"
+		},
+		{
+			"id": "f72290a46ed0b441",
+			"type": "text",
+			"text": "**Head of Design**\n\nHana Kim",
+			"x": -970,
+			"y": -100,
+			"width": 280,
+			"height": 160,
+			"color": "3"
+		},
+		{
+			"id": "71477694fb125fee",
+			"type": "file",
+			"file": "portraits/portrait-hana-kim.jpg",
+			"x": -685,
+			"y": -88,
+			"width": 90,
+			"height": 135,
+			"color": "3"
+		},
+		{
+			"id": "695d4cccd27ef6ab",
+			"type": "text",
+			"text": "**Project Management**\n\nTama Faleolo",
+			"x": -740,
+			"y": 220,
+			"width": 247,
+			"height": 140,
+			"color": "5"
+		},
+		{
+			"id": "819f8b95a9802fe0",
+			"type": "file",
+			"file": "portraits/portrait-tama-faleolo.jpg",
+			"x": -488,
+			"y": 222,
+			"width": 90,
+			"height": 135,
+			"color": "5"
+		},
+		{
+			"id": "766418ef9c1676c3",
+			"type": "text",
+			"text": "**QA**\n\nNia Mensah",
+			"x": -308,
+			"y": 220,
+			"width": 247,
+			"height": 140,
+			"color": "5"
+		},
+		{
+			"id": "11a4b78885fd3711",
+			"type": "file",
+			"file": "portraits/portrait-nia-mensah.jpg",
+			"x": -56,
+			"y": 222,
+			"width": 90,
+			"height": 135,
+			"color": "5"
+		},
+		{
+			"id": "7aabc4652099f190",
+			"type": "text",
+			"text": "**Dev Lead**\n\nAmara Okafor",
+			"x": 94,
+			"y": 220,
+			"width": 247,
+			"height": 140,
+			"color": "4"
+		},
+		{
+			"id": "780f8776900d8544",
+			"type": "file",
+			"file": "portraits/portrait-amara-okafor.jpg",
+			"x": 346,
+			"y": 222,
+			"width": 90,
+			"height": 135,
+			"color": "4"
+		},
+		{
+			"id": "d5a9a2f33b7c2fb1",
+			"type": "text",
+			"text": "**Developer**\n\nIsabela Costa",
+			"x": 233,
+			"y": 540,
+			"width": 247,
+			"height": 146,
+			"color": "4"
+		},
+		{
+			"id": "4968c0ca440d0f21",
+			"type": "file",
+			"file": "portraits/portrait-isabela-costa.jpg",
+			"x": 485,
+			"y": 545,
+			"width": 90,
+			"height": 135,
+			"color": "4"
+		},
+		{
+			"id": "9dfa82057575f239",
+			"type": "text",
+			"text": "**Developer**\n\nRafael Santos",
+			"x": -167,
+			"y": 540,
+			"width": 247,
+			"height": 146,
+			"color": "4"
+		},
+		{
+			"id": "19cc9fdd182315bd",
+			"type": "file",
+			"file": "portraits/portrait-rafael-santos.jpg",
+			"x": 85,
+			"y": 545,
+			"width": 90,
+			"height": 135,
+			"color": "4"
+		},
+		{
+			"id": "3fde407460558bfc",
+			"type": "text",
+			"text": "**Designer**\n\nKarim Haddad",
+			"x": -1310,
+			"y": 540,
+			"width": 247,
+			"height": 146,
+			"color": "6"
+		},
+		{
+			"id": "f2dc4e025e733538",
+			"type": "file",
+			"file": "portraits/portrait-karim-haddad.jpg",
+			"x": -1058,
+			"y": 545,
+			"width": 90,
+			"height": 135,
+			"color": "6"
+		},
+		{
+			"id": "e8b90b456af3245d",
+			"type": "text",
+			"text": "**Designer**\n\nFreya Lindqvist",
+			"x": -909,
+			"y": 540,
+			"width": 247,
+			"height": 146,
+			"color": "6"
+		},
+		{
+			"id": "0cd73f88367e40a0",
+			"type": "file",
+			"file": "portraits/portrait-freya-lindqvist.jpg",
+			"x": -657,
+			"y": 545,
+			"width": 90,
+			"height": 135,
+			"color": "6"
+		},
+		{
+			"id": "a6c4f8a677cb5a32",
+			"type": "text",
+			"text": "# Product Design Team",
+			"x": -1310,
+			"y": -580,
+			"width": 1890,
+			"height": 80
+		},
+		{
+			"id": "083fb39e2fefd58f",
+			"type": "text",
+			"text": "**Product Lead**\n\nMarco Bianchi",
+			"x": -151,
+			"y": -100,
+			"width": 280,
+			"height": 164,
+			"color": "3"
+		},
+		{
+			"id": "70de12c1028e1921",
+			"type": "file",
+			"file": "portraits/portrait-marco-bianchi.jpg",
+			"x": 134,
+			"y": -86,
+			"width": 90,
+			"height": 135,
+			"color": "3"
+		}
+	],
+	"edges": [
+		{
+			"id": "899cdb6989119e5f",
+			"fromNode": "f72290a46ed0b441",
+			"fromSide": "bottom",
+			"toNode": "025177522f3c2608",
+			"toSide": "top",
+			"color": "6"
+		},
+		{
+			"id": "06d3ca4b73f5d4ce",
+			"fromNode": "f72290a46ed0b441",
+			"fromSide": "bottom",
+			"toNode": "695d4cccd27ef6ab",
+			"toSide": "top",
+			"color": "3"
+		},
+		{
+			"id": "5ac9971c3824063a",
+			"fromNode": "ca37bdebb0a7d2f9",
+			"fromSide": "bottom",
+			"toNode": "f72290a46ed0b441",
+			"toSide": "top",
+			"color": "2"
+		},
+		{
+			"id": "fc088bda8754598b",
+			"fromNode": "ca37bdebb0a7d2f9",
+			"fromSide": "bottom",
+			"toNode": "083fb39e2fefd58f",
+			"toSide": "top",
+			"color": "2"
+		},
+		{
+			"id": "322f0cd1cd8f14fe",
+			"fromNode": "083fb39e2fefd58f",
+			"fromSide": "bottom",
+			"toNode": "766418ef9c1676c3",
+			"toSide": "top",
+			"color": "3"
+		},
+		{
+			"id": "49b1197907905b25",
+			"fromNode": "083fb39e2fefd58f",
+			"fromSide": "bottom",
+			"toNode": "7aabc4652099f190",
+			"toSide": "top",
+			"color": "4"
+		},
+		{
+			"id": "499d67a5301b17ce",
+			"fromNode": "7aabc4652099f190",
+			"fromSide": "bottom",
+			"toNode": "9dfa82057575f239",
+			"toSide": "top",
+			"color": "4"
+		},
+		{
+			"id": "bb9eff08bd5fad12",
+			"fromNode": "7aabc4652099f190",
+			"fromSide": "bottom",
+			"toNode": "d5a9a2f33b7c2fb1",
+			"toSide": "top",
+			"color": "4"
+		},
+		{
+			"id": "07c857b54dded370",
+			"fromNode": "025177522f3c2608",
+			"fromSide": "bottom",
+			"toNode": "3fde407460558bfc",
+			"toSide": "top",
+			"color": "6"
+		},
+		{
+			"id": "bcdfb9e7ff9413e4",
+			"fromNode": "025177522f3c2608",
+			"fromSide": "bottom",
+			"toNode": "e8b90b456af3245d",
+			"toSide": "top",
+			"color": "6"
+		}
+	]
+}
