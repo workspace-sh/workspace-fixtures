@@ -4,7 +4,7 @@ Canvas Candy — TfTHacker's collection of decorated card styles, stencil librar
 
 **Source:** https://github.com/TfTHacker/obsidian-canvas-candy
 
-**Left out:** the stock photos (Unsplash and Pexels, which aren't under Candy's MIT licence) and the brand logos (Facebook, Instagram, Twitter, YouTube). `Organizational Chart.canvas`, `Apollo Missions Timeline.canvas` and `Stencils - Stickers.canvas` point at some of them, so those image nodes are missing files: a case an app should draw sensibly too.
+**Left out:** the stock photos (Unsplash and Pexels, which aren't under Candy's MIT licence) and the brand logos (Facebook, Instagram, Twitter, YouTube). `Organizational Chart.canvas` and `Stencils - Stickers.canvas` point at some of them, so those image nodes are missing files: a case an app should draw sensibly too. `Apollo Missions Timeline.canvas` uses public-domain NASA photos in their place.
 
 ## Canvases
 

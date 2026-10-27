@@ -11,6 +11,4 @@ Whole example sets, copied as their authors structured them. Canvases reference 
 Each set's `LICENSE` is its upstream's, copied on 10 Oct 2026; keep it with the set wherever the set is copied or bundled. A set is only added here with an open-source licence, and only the files that licence covers: Candy's stock photos (Unsplash and Pexels) and its brand logos are left out. In their place:
 
 - `Candy/Assets/nasa-*.jpg`, for the Apollo timeline: NASA photos AS11-40-5903, 6900556 and AS15-86-11603 from [NASA's image library](https://images.nasa.gov), public domain, resized;
-- `Candy/Assets/portrait-*.jpg`, for the organisational chart: eleven portraits of fictional people, made for this repository with ChatGPT image generation and offered under CC0 1.0. With thanks to [Novoda](https://www.novoda.com) for the image generation, and to [Jake Lee (@jakelee_art)](https://www.instagram.com/jakelee_art/), whose dreamy gradient portraits inspired the style. The people's names on the chart were changed from Candy's to suit the portraits; their roles are Candy's.
-
-The brand logos on the stickers stencil have no replacement, so those four image nodes point at files that aren't here.
+Candy's organisational chart is kept as it came, so its portraits and the brand logos on the stickers stencil point at files that aren't here. A version of the chart with open portraits is the canvas fixture [`Fixtures/canvas/org-chart.canvas`](../Fixtures/canvas/).
