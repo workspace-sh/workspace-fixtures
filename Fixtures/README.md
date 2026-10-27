@@ -8,7 +8,7 @@ test with it.
 | Folder | File type | What's in it |
 |---|---|---|
 | [`markdown/`](markdown/) | Markdown (`.md`) | `Every Element.md` with its `pics/`, a long document (`large.md`), a short one (`welcome.md`), and `Table Embeds.md`, which embeds the tables in `table/` |
-| [`canvas/`](canvas/) | JSON Canvas (`.canvas`) | the spec's every-node-type file and a sample |
+| [`canvas/`](canvas/) | JSON Canvas (`.canvas`) | the spec's every-node-type file, a sample, and `org-chart.canvas`, an org chart whose portraits are in `portraits/` |
 | [`table/`](table/) | `.table` | the five example bundles, each as a folder and as a single file, and large tables of 10,000, 50,000 and 1,000,000 rows as single files |
 
 Plain text (`.txt`) and workspaces (folders, and `.workspace` peer-to-peer
@@ -31,6 +31,7 @@ update the copy here too.**
 | `markdown/Table Embeds.md` | written here, for this repository; it has no original elsewhere |
 | `canvas/sample.canvas` | react-native-jsoncanvas: `src/core/__tests__/fixtures/sample.canvas` |
 | `canvas/all-node-types.canvas` | react-native-jsoncanvas: `src/core/__tests__/spec-fixtures/all-node-types.canvas` |
+| `canvas/org-chart.canvas`, `canvas/portraits/` | written here, inspired by the organisational chart in [Canvas Candy](https://github.com/TfTHacker/obsidian-canvas-candy) (MIT, see [`Repositories/Candy/`](../Repositories/Candy/)): its layout and roles, with plain text and file nodes in place of Candy's styling, and new names. The portraits are resized copies of [`Images/Portraits/`](../Images/Portraits/) (CC0; credits in [`Images/README.md`](../Images/README.md)) |
 | `table/*.table` | table-file-format: `fixtures/` |
 | `table/large/` | made by table-file-format's `scripts/big-table.mts`; see [`table/README.md`](table/README.md) |
 

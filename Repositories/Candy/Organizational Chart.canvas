@@ -3,7 +3,7 @@
 		{
 			"id": "ca37bdebb0a7d2f9",
 			"type": "text",
-			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/portrait-noor-rahman.jpg|90]]</span>\n<span style=\"position:absolute; top:30; left:30\"><b>Head of Product</b><br>Noor Rahman</span>\n\n",
+			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/pexels-anastasia-shuraeva-5704852.jpg|120]]</span>\n<span style=\"position:absolute; top:30; left:30\"><b>Head of Product</b><br>Sandra Hemings</span>\n\n",
 			"x": -580,
 			"y": -440,
 			"width": 380,
@@ -13,7 +13,7 @@
 		{
 			"id": "025177522f3c2608",
 			"type": "text",
-			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/portrait-lucia-moreno.jpg|80]]</span>\n<span style=\"position:absolute; top:30; left:30\"><b>Graphics Lead</b><br>Lucía Moreno</span>\n",
+			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/alexis-chloe-TYDkKEgc0Fg-unsplash.jpg|100]]</span>\n<span style=\"position:absolute; top:30; left:30\"><b>Graphics Lead</b><br>Ana Tyler</span>\n",
 			"x": -1165,
 			"y": 220,
 			"width": 347,
@@ -23,7 +23,7 @@
 		{
 			"id": "f72290a46ed0b441",
 			"type": "text",
-			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/portrait-hana-kim.jpg|90]]</span>\n<span style=\"position:absolute; top:30; left:30\"><b>Head of Design</b><br>Hana Kim</span>\n\n",
+			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/aiony-haust-3TLl_97HNJo-unsplash.jpg|120]]</span>\n<span style=\"position:absolute; top:30; left:30\"><b>Head of Design</b><br>Amy Smith</span>\n\n",
 			"x": -970,
 			"y": -100,
 			"width": 380,
@@ -33,7 +33,7 @@
 		{
 			"id": "695d4cccd27ef6ab",
 			"type": "text",
-			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/portrait-tama-faleolo.jpg|80]]</span>\n<span style=\"position:absolute; top:30; left:30\"><b>Project Management</b><br>Tama Faleolo</span>\n",
+			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/andre-ravazzi-pFHPX3W4Ft4-unsplash.jpg|100]]</span>\n<span style=\"position:absolute; top:30; left:30\"><b>Project Management</b><br>Tama Buccanon</span>\n",
 			"x": -740,
 			"y": 220,
 			"width": 347,
@@ -43,7 +43,7 @@
 		{
 			"id": "766418ef9c1676c3",
 			"type": "text",
-			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/portrait-nia-mensah.jpg|80]]</span>\n<span style=\"position:absolute; top:30; left:30\"><b>QA</b><br>Nia Mensah</span>\n",
+			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/stefan-stefancik-QXevDflbl8A-unsplash.jpg|100]]</span>\n<span style=\"position:absolute; top:30; left:30\"><b>QA</b><br>Kathy Abrahams</span>\n",
 			"x": -308,
 			"y": 220,
 			"width": 347,
@@ -53,7 +53,7 @@
 		{
 			"id": "7aabc4652099f190",
 			"type": "text",
-			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/portrait-amara-okafor.jpg|80]]</span>\n<span style=\"position:absolute; top:30; left:30\"><b>Dev Lead</b><br>Amara Okafor</span>\n",
+			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/foto-sushi-6anudmpILw4-unsplash.jpg|100]]</span>\n<span style=\"position:absolute; top:30; left:30\"><b>Dev Lead</b><br>Ben Koolth</span>\n",
 			"x": 94,
 			"y": 220,
 			"width": 347,
@@ -63,7 +63,7 @@
 		{
 			"id": "d5a9a2f33b7c2fb1",
 			"type": "text",
-			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/portrait-isabela-costa.jpg|80]]</span>\n<span style=\"position:absolute; top:30; left:30\"><b>Developer</b><br>Isabela Costa</span>\n",
+			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/leon-elldot-f6HbVnGtNnY-unsplash.jpg|100]]</span>\n<span style=\"position:absolute; top:30; left:30\"><b>Developer</b><br>Paula Spencer</span>\n",
 			"x": 233,
 			"y": 540,
 			"width": 347,
@@ -73,7 +73,7 @@
 		{
 			"id": "9dfa82057575f239",
 			"type": "text",
-			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/portrait-rafael-santos.jpg|80]]</span>\n<span style=\"position:absolute; top:30; left:30\"><b>Developer</b><br>Rafael Santos</span>\n",
+			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/hunter-newton-scBTgeG5K5c-unsplash.jpg|100]]</span>\n<span style=\"position:absolute; top:30; left:30\"><b>Developer</b><br>John Weaver</span>\n",
 			"x": -167,
 			"y": 540,
 			"width": 347,
@@ -83,7 +83,7 @@
 		{
 			"id": "3fde407460558bfc",
 			"type": "text",
-			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/portrait-karim-haddad.jpg|80]]</span>\n<span style=\"position:absolute; top:30; left:30\"><b>Designer</b><br>Karim Haddad</span>\n",
+			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/arjunsyah-TBUA5KHJn6k-unsplash.jpg|100]]</span>\n<span style=\"position:absolute; top:30; left:30\"><b>Designer</b><br>Philip Portman</span>\n",
 			"x": -1310,
 			"y": 540,
 			"width": 347,
@@ -93,7 +93,7 @@
 		{
 			"id": "e8b90b456af3245d",
 			"type": "text",
-			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/portrait-freya-lindqvist.jpg|80]]<span style=\"position:absolute; top:30; left:30\"><b>Designer</b><br>Freya Lindqvist</span>\n",
+			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/christina-wocintechchat-com-0Zx1bDv5BNY-unsplash.jpg|100]]<span style=\"position:absolute; top:30; left:30\"><b>Designer</b><br>Cheryl Stoope</span>\n",
 			"x": -909,
 			"y": 540,
 			"width": 347,
@@ -112,7 +112,7 @@
 		{
 			"id": "083fb39e2fefd58f",
 			"type": "text",
-			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/portrait-marco-bianchi.jpg|90]]</span><span style=\"position:absolute; top:30; left:30\"><b>Product Lead</b><br>Marco Bianchi</span>\n",
+			"text": "---\ncssclasses:\n  - cc-border-left\n  - cc-border-double\n  - cc-card-gradient-0deg\n  - cc-card-gradient-0deg\n---\n\n<span style=\"float: right; padding-right:20\">![[Assets/albert-dera-ILip77SbmOE-unsplash.jpg|120]]</span><span style=\"position:absolute; top:30; left:30\"><b>Product Lead</b><br>Bart Johnson</span>\n",
 			"x": -151,
 			"y": -100,
 			"width": 380,
