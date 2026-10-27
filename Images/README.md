@@ -10,7 +10,7 @@ Images made for this repository, kept as they came out so they can be reused: in
 - B: backlit side profile, lilac-to-peach sky;
 - C: glowing side profile, periwinkle-to-violet background.
 
-The generator didn't always follow the look, and `portrait-03-C.png` faces right where the others face left. `portrait-12.png` was made later, to replace `portrait-09-C.png` on the organisational chart, as 09 looked too much like 02.
+The generator didn't always follow the look, and `portrait-03-C.png` faces right where the others face left. `portrait-12.png` was made later, to replace `portrait-01-A.png` on the organisational chart, as 01 looked too much like 08.
 
 They were made with ChatGPT image generation and are offered under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). With thanks to [Novoda](https://www.novoda.com) for the image generation, and to [Jake Lee (@jakelee_art)](https://www.instagram.com/jakelee_art/), whose dreamy gradient portraits inspired the style.
 
