@@ -24,6 +24,7 @@ or a test.
 | [`Canvas/`](Canvas/) | single JSON Canvas files from the MIT sets in `Repositories/` |
 | [`Markdown/`](Markdown/) | GFM and edge-case test files |
 | [`Plaintext/`](Plaintext/) | plain `.txt` test files |
+| [`Images/`](Images/) | images made for this repository, kept unedited for reuse (portraits of fictional people) |
 | [`Repositories/`](Repositories/) | whole example sets whose canvases reference their notes and images (Candy, JSONCanvas, Hesprs), each with its licence |
 | [`Fixtures/`](Fixtures/) | test fixtures, one folder per file type Workspace opens (`markdown/`, `canvas/`, `table/`) |
 
