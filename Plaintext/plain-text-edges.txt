@@ -1,0 +1,21 @@
+Plain text edges
+
+A plain .txt file, written for testing. Nothing here is markup: *these
+asterisks*, # this hash, [this](link) and <b>this tag</b> must show as typed.
+
+Accents and other scripts: café, naïve, Ærø, Łódź, Ελληνικά, русский,
+日本語のテキスト, 中文, 한국어, हिन्दी.
+Right to left: שלום עולם, and Arabic مرحبا بالعالم, mixed with English.
+Emoji, including a joined one and a flag: 😀 👩‍💻 🇬🇭 🏳️‍🌈
+Combining marks: this é is an e followed by U+0301, not the single character é.
+
+Tabs	between	words	here.
+    Four leading spaces, kept as typed.
+
+Two blank lines follow.
+
+
+A very long line with no breaks in it, to see that the view wraps it (or scrolls sideways, if that is the setting) without dropping any of it: lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, and this is the end of the long line.
+
+Trailing spaces on this line:
+The last line ends with a newline.

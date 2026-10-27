@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hnmryzi51j6jz",
+    "name": "All lines",
+    "layout": "table",
+    "totals": {
+      "order": "count",
+      "quantity": "sum",
+      "line_total": "sum"
+    }
+  }
+]
