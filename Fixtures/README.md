@@ -8,7 +8,7 @@ test with it.
 | Folder | File type | What's in it |
 |---|---|---|
 | [`markdown/`](markdown/) | Markdown (`.md`) | `Every Element.md` with its `pics/`, a long document (`large.md`), a short one (`welcome.md`), and `Table Embeds.md`, which embeds the tables in `table/` |
-| [`canvas/`](canvas/) | JSON Canvas (`.canvas`) | the spec's every-node-type file, a sample, and `org-chart.canvas`, an org chart whose portraits are in `portraits/` |
+| [`canvas/`](canvas/) | JSON Canvas (`.canvas`) | the spec's every-node-type file, a sample, `org-chart.canvas`, an org chart whose portraits are in `portraits/`, and large canvases of 500, 2,000, 5,000 and 10,000 nodes (`big-*.canvas`) |
 | [`table/`](table/) | `.table` | the five example bundles, each as a folder and as a single file, and large tables of 10,000, 50,000 and 1,000,000 rows as single files |
 
 Plain text (`.txt`) and workspaces (folders, and `.workspace` peer-to-peer
@@ -31,6 +31,7 @@ update the copy here too.**
 | `canvas/sample.canvas` | react-native-jsoncanvas: `src/core/__tests__/fixtures/sample.canvas` |
 | `canvas/all-node-types.canvas` | react-native-jsoncanvas: `src/core/__tests__/spec-fixtures/all-node-types.canvas` |
 | `canvas/org-chart.canvas`, `canvas/portraits/` | written here, inspired by the organisational chart in [Canvas Candy](https://github.com/TfTHacker/obsidian-canvas-candy) (MIT): its layout and roles, with plain text and file nodes in place of Candy's styling, and new names. The portraits are resized copies of [`Images/Portraits/`](../Images/Portraits/) (CC0; credits in [`Images/README.md`](../Images/README.md)) |
+| `canvas/big-*.canvas`, `canvas/drawings/shapes.svg` | made by react-native-jsoncanvas's `npm run fixtures:canvas -- <this folder>` (`scripts/big-canvas.mts`): the canvases its renderer benchmark measures (`example/shared/generateCanvas.ts`, seeded, so the same on every run), with images from `portraits/` and `drawings/`. `shapes.svg` was drawn for this repository |
 | `table/*.table` | table-file-format: `fixtures/` |
 | `table/large/` | made by table-file-format's `scripts/big-table.mts`; see [`table/README.md`](table/README.md) |
 
@@ -50,3 +51,10 @@ update the copy here too.**
   `<img>`, `<p align>` and `<div align>` as well (workspace-sh/markdown#345).
 - `table/large/` holds single-file `.table`s only; unzip one to get its
   folder.
+- `canvas/big-*.canvas` are for camera speed (pinch, pan, zoom) and opening
+  time with many nodes: groups of 5×5 cards, text cards with Markdown, link
+  cards, an image every 97 nodes (the portraits and `drawings/shapes.svg`, by
+  paths relative to the canvas) and edges between neighbours, some labelled.
+  Keep `portraits/` and `drawings/` beside them. To change them, change the
+  generator in react-native-jsoncanvas and write them again, so they stay the
+  canvases the benchmark measures.
