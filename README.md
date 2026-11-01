@@ -19,8 +19,8 @@ test. Useful material elsewhere is linked below instead.
 |---|---|
 | [`Markdown/`](Markdown/) | GFM and edge-case test files |
 | [`Plaintext/`](Plaintext/) | plain `.txt` test files |
-| [`Images/`](Images/) | images made for this repository, kept unedited for reuse (portraits of fictional people) |
-| [`Fixtures/`](Fixtures/) | test fixtures, one folder per file type Workspace opens (`markdown/`, `canvas/`, `table/`) |
+| [`Images/`](Images/) | images made for this repository, kept unedited for reuse (portraits of fictional people, and photographs for the TextBundle fixtures) |
+| [`Fixtures/`](Fixtures/) | test fixtures, one folder per file type Workspace opens (`markdown/`, `canvas/`, `table/`, `textbundle/`) |
 
 Each folder has a README saying what it holds and where it came from.
 
