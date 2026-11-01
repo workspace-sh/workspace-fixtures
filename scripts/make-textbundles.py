@@ -127,7 +127,7 @@ The heron was there again, in the same shallows below the weir, as still as a po
 
 ![An unfurling fern frond](assets/fern.heic)
 
-![A kingfisher on a branch (I never got the picture)](assets/kingfisher.jpg)
+![A kingfisher on a branch](assets/kingfisher.jpg)
 
 ## The wall
 
