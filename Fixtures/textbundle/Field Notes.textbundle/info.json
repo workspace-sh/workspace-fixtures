@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "type": "net.daringfireball.markdown",
+  "transient": false,
+  "creatorIdentifier": "com.example.fieldnotes",
+  "com.example.fieldnotes": {
+    "pinned": true,
+    "tags": [
+      "walks",
+      "birds"
+    ],
+    "colour": "moss"
+  }
+}
