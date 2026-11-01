@@ -10,6 +10,7 @@ test with it.
 | [`markdown/`](markdown/) | Markdown (`.md`) | `Every Element.md` with its `pics/`, a long document (`large.md`), a short one (`welcome.md`), and `Table Embeds.md`, which embeds the tables in `table/` |
 | [`canvas/`](canvas/) | JSON Canvas (`.canvas`) | the spec's every-node-type file, a sample, `org-chart.canvas`, an org chart whose portraits are in `portraits/`, and large canvases of 500, 2,000, 5,000 and 10,000 nodes (`big-*.canvas`) |
 | [`table/`](table/) | `.table` | the five example bundles, each as a folder and as a single file, and large tables of 10,000, 50,000 and 1,000,000 rows as single files |
+| [`textbundle/`](textbundle/) | TextBundle (`.textbundle`) and TextPack (`.textpack`) | a journal with images in four formats, as a folder, a standard pack and a flat pack; a web clip with its `sourceURL`; plain text; and packs that are damaged, unsafe or large |
 
 Plain text (`.txt`) and workspaces (folders, and `.workspace` peer-to-peer
 workspaces) get a folder here when they have a fixture. The folders at the top
@@ -34,6 +35,7 @@ update the copy here too.**
 | `canvas/big-*.canvas`, `canvas/drawings/shapes.svg` | made by react-native-jsoncanvas's `npm run fixtures:canvas -- <this folder>` (`scripts/big-canvas.mts`): the canvases its renderer benchmark measures (`example/shared/generateCanvas.ts`, seeded, so the same on every run), with images from `portraits/` and `drawings/`. `shapes.svg` was drawn for this repository |
 | `table/*.table` | table-file-format: `fixtures/` |
 | `table/large/` | made by table-file-format's `scripts/big-table.mts`; see [`table/README.md`](table/README.md) |
+| `textbundle/` | made by this repository's [`scripts/make-textbundles.py`](../scripts/make-textbundles.py) from [`Images/Field Notes/`](../Images/Field%20Notes/) and [`Images/Coast/`](../Images/Coast/); see [`textbundle/README.md`](textbundle/README.md) |
 
 ## Notes
 
