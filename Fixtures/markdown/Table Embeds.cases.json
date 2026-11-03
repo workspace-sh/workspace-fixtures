@@ -1,0 +1,551 @@
+{
+  "document": "Table Embeds.md",
+  "cases": [
+    {
+      "line": "[Tasks by priority](../table/projects.table#table=tasks&view=All%20tasks%20by%20priority&embed=1 \"All tasks by priority\")",
+      "address": "../table/projects.table#table=tasks&view=All%20tasks%20by%20priority&embed=1",
+      "expect": {
+        "table": "tasks",
+        "view": "All tasks by priority",
+        "layout": "table",
+        "rows": 8,
+        "first": [
+          "Land .table extension",
+          "Markdown editor polish",
+          "Wire RSD + StyleX",
+          "Settings panel",
+          "Fixtures + tests"
+        ]
+      }
+    },
+    {
+      "line": "[Task board](../table/projects.table#table=tasks&view=Board%20by%20status&embed=1 \"Tasks by status\")",
+      "address": "../table/projects.table#table=tasks&view=Board%20by%20status&embed=1",
+      "expect": {
+        "table": "tasks",
+        "view": "Board by status",
+        "layout": "board",
+        "rows": 8,
+        "first": [
+          "Settings panel",
+          "Wire RSD + StyleX",
+          "Land .table extension"
+        ],
+        "groups": [
+          {
+            "label": "todo",
+            "count": 3
+          },
+          {
+            "label": "doing",
+            "count": 3
+          },
+          {
+            "label": "done",
+            "count": 2
+          }
+        ]
+      }
+    },
+    {
+      "line": "[Task board, by id](../table/projects.table#table=tasks&view=mufe9nmjruiq5&embed=1 \"Tasks by status\")",
+      "address": "../table/projects.table#table=tasks&view=mufe9nmjruiq5&embed=1",
+      "expect": {
+        "table": "tasks",
+        "view": "Board by status",
+        "layout": "board",
+        "rows": 8,
+        "first": [
+          "Settings panel",
+          "Wire RSD + StyleX",
+          "Land .table extension"
+        ],
+        "groups": [
+          {
+            "label": "todo",
+            "count": 3
+          },
+          {
+            "label": "doing",
+            "count": 3
+          },
+          {
+            "label": "done",
+            "count": 2
+          }
+        ]
+      }
+    },
+    {
+      "line": "[Projects](../table/projects.table#table=projects&view=All%20projects&embed=1 \"All projects\")",
+      "address": "../table/projects.table#table=projects&view=All%20projects&embed=1",
+      "expect": {
+        "table": "projects",
+        "view": "All projects",
+        "layout": "table",
+        "rows": 17,
+        "first": [
+          "Workspace v1",
+          "Table file format spike",
+          "iOS Pro launch",
+          "Web companion app",
+          "Sync engine"
+        ]
+      }
+    },
+    {
+      "line": "[Deals](../table/crm.table#table=deals&embed=1)",
+      "address": "../table/crm.table#table=deals&embed=1",
+      "expect": {
+        "table": "deals",
+        "view": "Pipeline",
+        "layout": "board",
+        "rows": 8,
+        "first": [
+          "Fern: studio plan",
+          "Lumen: pilot",
+          "Northwind: store rollout",
+          "Atlas: 3-year renewal",
+          "Tidal: grid analytics",
+          "Quill: newsroom seats"
+        ],
+        "groups": [
+          {
+            "label": "Lead",
+            "count": 2
+          },
+          {
+            "label": "Qualified",
+            "count": 1
+          },
+          {
+            "label": "Proposal",
+            "count": 2
+          },
+          {
+            "label": "Negotiation",
+            "count": 1
+          },
+          {
+            "label": "Won",
+            "count": 1
+          },
+          {
+            "label": "Lost",
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "line": "[Companies](../table/crm.table#table=companies&embed=1 \"Companies\")",
+      "address": "../table/crm.table#table=companies&embed=1",
+      "expect": {
+        "table": "companies",
+        "view": "All companies",
+        "layout": "table",
+        "rows": 6,
+        "first": [
+          "Northwind Traders",
+          "Lumen Health",
+          "Atlas Freight",
+          "Quill & Co",
+          "Tidal Energy"
+        ]
+      }
+    },
+    {
+      "line": "[Contacts](../table/crm.table#table=contacts&embed=1 \"Contacts\")",
+      "address": "../table/crm.table#table=contacts&embed=1",
+      "expect": {
+        "table": "contacts",
+        "view": "All contacts",
+        "layout": "table",
+        "rows": 8,
+        "first": [
+          "Inês Duarte",
+          "Kofi Mensah",
+          "Maya Okafor",
+          "Priya Nair",
+          "Jonas Weber"
+        ]
+      }
+    },
+    {
+      "line": "[Projects, five at a time](../table/projects.table#table=projects&view=All%20projects&rows=5&embed=1 \"Five rows, then it scrolls\")",
+      "address": "../table/projects.table#table=projects&view=All%20projects&rows=5&embed=1",
+      "expect": {
+        "table": "projects",
+        "view": "All projects",
+        "layout": "table",
+        "rows": 17,
+        "first": [
+          "Workspace v1",
+          "Table file format spike",
+          "iOS Pro launch",
+          "Web companion app",
+          "Sync engine"
+        ]
+      }
+    },
+    {
+      "line": "[Projects, twelve at a time](../table/projects.table#table=projects&view=All%20projects&rows=12&embed=1 \"Twelve rows\")",
+      "address": "../table/projects.table#table=projects&view=All%20projects&rows=12&embed=1",
+      "expect": {
+        "table": "projects",
+        "view": "All projects",
+        "layout": "table",
+        "rows": 17,
+        "first": [
+          "Workspace v1",
+          "Table file format spike",
+          "iOS Pro launch",
+          "Web companion app",
+          "Sync engine"
+        ]
+      }
+    },
+    {
+      "line": "[Every task](../table/projects.table#table=tasks&view=All%20tasks%20by%20priority&rows=20&embed=1 \"All eight\")",
+      "address": "../table/projects.table#table=tasks&view=All%20tasks%20by%20priority&rows=20&embed=1",
+      "expect": {
+        "table": "tasks",
+        "view": "All tasks by priority",
+        "layout": "table",
+        "rows": 8,
+        "first": [
+          "Land .table extension",
+          "Markdown editor polish",
+          "Wire RSD + StyleX",
+          "Settings panel",
+          "Fixtures + tests"
+        ]
+      }
+    },
+    {
+      "line": "[Tasks, one card deep](../table/projects.table#table=tasks&view=Board%20by%20status&cards=1&embed=1 \"One card down each column\")",
+      "address": "../table/projects.table#table=tasks&view=Board%20by%20status&cards=1&embed=1",
+      "expect": {
+        "table": "tasks",
+        "view": "Board by status",
+        "layout": "board",
+        "rows": 8,
+        "first": [
+          "Settings panel",
+          "Wire RSD + StyleX",
+          "Land .table extension"
+        ],
+        "groups": [
+          {
+            "label": "todo",
+            "count": 3
+          },
+          {
+            "label": "doing",
+            "count": 3
+          },
+          {
+            "label": "done",
+            "count": 2
+          }
+        ]
+      }
+    },
+    {
+      "line": "[Quick list](../table/projects.table#table=projects&view=Quick%20list&rows=3&embed=1 \"Three rows of a list\")",
+      "address": "../table/projects.table#table=projects&view=Quick%20list&rows=3&embed=1",
+      "expect": {
+        "table": "projects",
+        "view": "Quick list",
+        "layout": "list",
+        "rows": 17,
+        "first": [
+          "Workspace v1",
+          "Table file format spike",
+          "iOS Pro launch",
+          "Web companion app",
+          "Sync engine"
+        ]
+      }
+    },
+    {
+      "line": "[Gallery](../table/projects.table#table=projects&view=Gallery&cards=1&embed=1 \"The first line of a gallery\")",
+      "address": "../table/projects.table#table=projects&view=Gallery&cards=1&embed=1",
+      "expect": {
+        "table": "projects",
+        "view": "Gallery",
+        "layout": "gallery",
+        "rows": 17,
+        "first": [
+          "Workspace v1",
+          "Table file format spike",
+          "iOS Pro launch",
+          "Web companion app",
+          "Sync engine"
+        ]
+      }
+    },
+    {
+      "line": "[Projects](../table/projects.table#table=projects&view=All%20projects&cards=2&embed=1 \"cards= on a table: ignored\")",
+      "address": "../table/projects.table#table=projects&view=All%20projects&cards=2&embed=1",
+      "expect": {
+        "table": "projects",
+        "view": "All projects",
+        "layout": "table",
+        "rows": 17,
+        "first": [
+          "Workspace v1",
+          "Table file format spike",
+          "iOS Pro launch",
+          "Web companion app",
+          "Sync engine"
+        ]
+      }
+    },
+    {
+      "line": "[Top tasks](../table/projects.table#table=tasks&view=All%20tasks%20by%20priority&rows=3&rest=more&embed=1 \"The three most urgent\")",
+      "address": "../table/projects.table#table=tasks&view=All%20tasks%20by%20priority&rows=3&rest=more&embed=1",
+      "expect": {
+        "table": "tasks",
+        "view": "All tasks by priority",
+        "layout": "table",
+        "rows": 8,
+        "first": [
+          "Land .table extension",
+          "Markdown editor polish",
+          "Wire RSD + StyleX"
+        ],
+        "more": "Show 5 more rows"
+      }
+    },
+    {
+      "line": "[Next up](../table/projects.table#table=tasks&view=Board%20by%20status&cards=1&rest=more&embed=1 \"The first card of each column\")",
+      "address": "../table/projects.table#table=tasks&view=Board%20by%20status&cards=1&rest=more&embed=1",
+      "expect": {
+        "table": "tasks",
+        "view": "Board by status",
+        "layout": "board",
+        "rows": 8,
+        "first": [
+          "Settings panel",
+          "Wire RSD + StyleX",
+          "Land .table extension"
+        ],
+        "groups": [
+          {
+            "label": "todo",
+            "count": 3
+          },
+          {
+            "label": "doing",
+            "count": 3
+          },
+          {
+            "label": "done",
+            "count": 2
+          }
+        ],
+        "more": "Show 5 more cards"
+      }
+    },
+    {
+      "line": "[Projects by owner](../table/projects.table#table=projects&view=By%20owner&rows=3&rest=more&embed=1 \"Three, inside the first group\")",
+      "address": "../table/projects.table#table=projects&view=By%20owner&rows=3&rest=more&embed=1",
+      "expect": {
+        "table": "projects",
+        "view": "By owner",
+        "layout": "table",
+        "rows": 17,
+        "first": [
+          "Workspace v1",
+          "Table file format spike",
+          "iOS Pro launch"
+        ],
+        "groups": [
+          {
+            "label": "leslie",
+            "count": 6
+          }
+        ],
+        "more": "Show 14 more rows"
+      }
+    },
+    {
+      "line": "[Gallery](../table/projects.table#table=projects&view=Gallery&cards=2&rest=more&embed=1 \"Two cards\")",
+      "address": "../table/projects.table#table=projects&view=Gallery&cards=2&rest=more&embed=1",
+      "expect": {
+        "table": "projects",
+        "view": "Gallery",
+        "layout": "gallery",
+        "rows": 17,
+        "first": [
+          "Workspace v1",
+          "Table file format spike"
+        ],
+        "more": "Show 15 more cards"
+      }
+    },
+    {
+      "line": "[Projects](../table/projects.table#table=projects&view=Quick%20list&rows=4&rest=more&embed=1 \"Four of seventeen\")",
+      "address": "../table/projects.table#table=projects&view=Quick%20list&rows=4&rest=more&embed=1",
+      "expect": {
+        "table": "projects",
+        "view": "Quick list",
+        "layout": "list",
+        "rows": 17,
+        "first": [
+          "Workspace v1",
+          "Table file format spike",
+          "iOS Pro launch",
+          "Web companion app"
+        ],
+        "more": "Show 13 more rows"
+      }
+    },
+    {
+      "line": "[Deals](../table/crm.table#table=deals&view=All%20deals&rows=2&rest=more&embed=1 \"Two deals, and the totals of all\")",
+      "address": "../table/crm.table#table=deals&view=All%20deals&rows=2&rest=more&embed=1",
+      "expect": {
+        "table": "deals",
+        "view": "All deals",
+        "layout": "table",
+        "rows": 8,
+        "first": [
+          "Atlas: 3-year renewal",
+          "Northwind: store rollout"
+        ],
+        "more": "Show 6 more rows"
+      }
+    },
+    {
+      "line": "[Every task](../table/projects.table#table=tasks&view=All%20tasks%20by%20priority&rows=20&rest=more&embed=1)",
+      "address": "../table/projects.table#table=tasks&view=All%20tasks%20by%20priority&rows=20&rest=more&embed=1",
+      "expect": {
+        "table": "tasks",
+        "view": "All tasks by priority",
+        "layout": "table",
+        "rows": 8,
+        "first": [
+          "Land .table extension",
+          "Markdown editor polish",
+          "Wire RSD + StyleX",
+          "Settings panel",
+          "Fixtures + tests",
+          "App icon",
+          "Sync conflict resolution",
+          "OG images"
+        ]
+      }
+    },
+    {
+      "line": "[Top tasks, from a single file](../table/single-file/projects.table#table=tasks&view=All%20tasks%20by%20priority&rows=3&rest=more&embed=1 \"From the single file\")",
+      "address": "../table/single-file/projects.table#table=tasks&view=All%20tasks%20by%20priority&rows=3&rest=more&embed=1",
+      "expect": {
+        "table": "tasks",
+        "view": "All tasks by priority",
+        "layout": "table",
+        "rows": 8,
+        "first": [
+          "Land .table extension",
+          "Markdown editor polish",
+          "Wire RSD + StyleX"
+        ],
+        "more": "Show 5 more rows"
+      }
+    },
+    {
+      "line": "[Formula errors](../table/formula-errors.table#embed=1)",
+      "address": "../table/formula-errors.table#embed=1",
+      "expect": {
+        "table": "errors",
+        "view": "All errors",
+        "layout": "table",
+        "rows": 19,
+        "first": [
+          "Divide by zero",
+          "Overflow",
+          "Text in a sum",
+          "Not a true/false in if",
+          "Wrong number of arguments"
+        ]
+      }
+    },
+    {
+      "line": "A link in a sentence: see [the tasks](../table/projects.table#table=tasks&embed=1) for more.",
+      "address": "../table/projects.table#table=tasks&embed=1",
+      "expect": {
+        "link": true
+      }
+    },
+    {
+      "line": "- A link alone in a list item: [the tasks](../table/projects.table#table=tasks&embed=1)",
+      "address": "../table/projects.table#table=tasks&embed=1",
+      "expect": {
+        "link": true
+      }
+    },
+    {
+      "line": "> [the tasks](../table/projects.table#table=tasks&embed=1)",
+      "address": "../table/projects.table#table=tasks&embed=1",
+      "expect": {
+        "link": true
+      }
+    },
+    {
+      "line": "[Tasks, as a link](../table/projects.table#table=tasks&embed=0)",
+      "address": "../table/projects.table#table=tasks&embed=0",
+      "expect": {
+        "link": true
+      }
+    },
+    {
+      "line": "[Tasks, as a link](../table/projects.table#table=tasks)",
+      "address": "../table/projects.table#table=tasks",
+      "expect": {
+        "link": true
+      }
+    },
+    {
+      "line": "[Missing file](../table/nowhere.table#embed=1 \"This file does not exist\")",
+      "address": "../table/nowhere.table#embed=1",
+      "expect": {
+        "problem": "There’s no table at “../table/nowhere.table”."
+      }
+    },
+    {
+      "line": "[Missing table](../table/projects.table#table=nope&embed=1 \"No such table\")",
+      "address": "../table/projects.table#table=nope&embed=1",
+      "expect": {
+        "problem": "“projects.table” has no table named “nope”. It has “projects”, “tasks”."
+      }
+    },
+    {
+      "line": "[Which table](../table/projects.table#embed=1 \"No table named\")",
+      "address": "../table/projects.table#embed=1",
+      "expect": {
+        "problem": "“projects.table” holds 2 tables. The link says which with “table=”: “projects”, “tasks”."
+      }
+    },
+    {
+      "line": "[Not a table](../table/broken/not-a-table.table#embed=1 \"Not a .table\")",
+      "address": "../table/broken/not-a-table.table#embed=1",
+      "expect": {
+        "problem": "“not-a-table.table” couldn’t be read: not a zip archive (no end-of-central-directory)"
+      }
+    },
+    {
+      "line": "[Missing view](../table/projects.table#table=tasks&view=nope&embed=1 \"No such view\")",
+      "address": "../table/projects.table#table=tasks&view=nope&embed=1",
+      "expect": {
+        "problem": "The table “tasks” has no view “nope”. It has “All tasks by priority”, “Board by status”."
+      }
+    },
+    {
+      "line": "[Outside](../../../outside.table#embed=1 \"Outside the workspace\")",
+      "address": "../../../outside.table#embed=1",
+      "expect": {
+        "problem": "“../../../outside.table” is outside the folder that’s open, so it isn’t shown."
+      }
+    }
+  ]
+}
