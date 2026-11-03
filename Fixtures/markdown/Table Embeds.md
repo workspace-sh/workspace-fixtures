@@ -1,6 +1,6 @@
 # Table embeds
 
-A paragraph that is one link, with `embed` in its address, is an embed: Workspace draws the link's target in place, and every other Markdown tool shows the link. The tables are the examples in `../table/`, reached by relative path. Each case says what should appear.
+A paragraph that is one link, with `embed` in its address, is an embed: Workspace draws the link's target in place, and every other Markdown tool shows the link. The tables are the examples in `../table/`, reached by relative path. Each case says what should appear, and [`Table Embeds.cases.json`](Table%20Embeds.cases.json) says it again for tests: each platform's tests read that file, so every platform checks the same cases.
 
 ## A table view
 
@@ -84,6 +84,14 @@ A board one card deep, with `cards=1&rest=more`. Each column still says how many
 
 [Next up](../table/projects.table#table=tasks&view=Board%20by%20status&cards=1&rest=more&embed=1 "The first card of each column")
 
+A table grouped by owner, cut inside its first group, with `rows=3&rest=more`. The group's count is of all its rows, not the three drawn.
+
+[Projects by owner](../table/projects.table#table=projects&view=By%20owner&rows=3&rest=more&embed=1 "Three, inside the first group")
+
+A gallery of two cards, with `cards=2&rest=more`:
+
+[Gallery](../table/projects.table#table=projects&view=Gallery&cards=2&rest=more&embed=1 "Two cards")
+
 A list of four projects, with `rows=4&rest=more`:
 
 [Projects](../table/projects.table#table=projects&view=Quick%20list&rows=4&rest=more&embed=1 "Four of seventeen")
@@ -95,6 +103,16 @@ The deals, two rows of eight, with `rows=2&rest=more`. The totals beneath are of
 A count the table doesn't reach, with `rows=20&rest=more`: all eight tasks, and no line beneath.
 
 [Every task](../table/projects.table#table=tasks&view=All%20tasks%20by%20priority&rows=20&rest=more&embed=1)
+
+## Other kinds of file
+
+A single-file `.table`: the same example as one file (`../table/single-file/`). It draws as the folder does, and an edit is saved back into the file.
+
+[Top tasks, from a single file](../table/single-file/projects.table#table=tasks&view=All%20tasks%20by%20priority&rows=3&rest=more&embed=1 "From the single file")
+
+A file of one table, with no `table=`: that table is drawn.
+
+[Formula errors](../table/formula-errors.table#embed=1)
 
 ## Not embeds
 
@@ -127,6 +145,14 @@ A file that isn't there:
 A table the file doesn't have:
 
 [Missing table](../table/projects.table#table=nope&embed=1 "No such table")
+
+A file of two tables, with no `table=`:
+
+[Which table](../table/projects.table#embed=1 "No table named")
+
+A file named `.table` that isn't one:
+
+[Not a table](../table/broken/not-a-table.table#embed=1 "Not a .table")
 
 A view the table doesn't have:
 
