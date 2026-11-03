@@ -66,3 +66,10 @@ SHA-256, to tell whether a copy is the one that was measured:
 | `big-1000000.table`'s rows files inside it, joined in name order | `fbf24e25e75967c1d892fe7ea58c0dea58f45c1bbcb2bedbdb8beecc1c01434d` |
 
 How to measure with them is in table-file-format's `docs/BENCHMARKING.md`.
+
+## Not a table (`broken/`)
+
+`broken/not-a-table.table` is a plain text file with a `.table` name, for what
+an app says when a file it's given isn't a `.table` (`markdown/Table Embeds.md`
+embeds it). It's in a folder of its own so that nothing reading the examples
+above mistakes it for one.

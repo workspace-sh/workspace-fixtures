@@ -1,0 +1,40 @@
+{
+  "document": "Large Table Embeds.md",
+  "cases": [
+    {
+      "line": "[Deals, the first five](../table/large/big-50000.table#table=deals&rows=5&rest=more&embed=1 \"Five of 50,000\")",
+      "address": "../table/large/big-50000.table#table=deals&rows=5&rest=more&embed=1",
+      "expect": {
+        "table": "deals",
+        "view": "All deals",
+        "layout": "table",
+        "rows": 50000,
+        "first": [
+          "Orbit audit 1",
+          "Orbit audit 2",
+          "Summit rollout 3",
+          "Harbor support plan 4",
+          "Atlas expansion 5"
+        ],
+        "more": "Show 49,995 more rows"
+      }
+    },
+    {
+      "line": "[Every deal](../table/large/big-50000.table#table=deals&embed=1 \"All 50,000\")",
+      "address": "../table/large/big-50000.table#table=deals&embed=1",
+      "expect": {
+        "table": "deals",
+        "view": "All deals",
+        "layout": "table",
+        "rows": 50000,
+        "first": [
+          "Orbit audit 1",
+          "Orbit audit 2",
+          "Summit rollout 3",
+          "Harbor support plan 4",
+          "Atlas expansion 5"
+        ]
+      }
+    }
+  ]
+}
