@@ -1,14 +1,14 @@
-# The example tables from workspace-sh/table-file-format fixtures/ (601bc8d 2026-10-27), written by npm run fixtures:export.
+# The example tables from workspace-sh/workspace-fixtures Fixtures/table (a1e453b 2026-11-03), written by table-file-format's npm run fixtures:export.
 e5f07c00ed54106be7d6bd9f3260fdbd5d9c5bba3896cf764d4f9628514a68e8  crm.table/meta.json
-3ebb84669fac94782253eec1813d4f1df3d3d1b747aefc4853c0987d000be5f0  crm.table/tables/companies/attachments/co-atlas.svg
-34a8ea8be25b24886a65916c32c021b01de654d6f1f3c0d299a676928207008f  crm.table/tables/companies/attachments/co-fern.svg
-d0a93696e81b0f5e9356b19e3f570a8bd412a65af5a32bc12aed2cc3eb1c62b9  crm.table/tables/companies/attachments/co-lumen.svg
-b5e239b514c94d7653bbb815a944ed7f727795c856353519b96115cb67b2d9a5  crm.table/tables/companies/attachments/co-northwind.svg
-b451f8daba7b7aecc1e9720fe49b987f40d51e0da56d33cf53e98f8768983aef  crm.table/tables/companies/attachments/co-quill.svg
-c94fa335a5e9ca45c60465b64b141f52fe6b3ade97cd4322ec4991be7baeaf23  crm.table/tables/companies/attachments/co-tidal.svg
+f49cc0acdd8c7172635c06fd68de0910ce490615398589c76b2624c34495d562  crm.table/tables/companies/attachments/co-atlas.png
+8bbbe16d4d8044ed1c92fdd37bc89cd667e29f8e7de0578268a4baef96d64a47  crm.table/tables/companies/attachments/co-fern.png
+cc7eec20a45d362ed3bc57b83ac4d7e758d60614d2d9dcfad3c8a4ed50ea1b15  crm.table/tables/companies/attachments/co-lumen.png
+3264909f2d7a69349a877e4a5fc8e1125f807667ce331493dcaba0684924f45f  crm.table/tables/companies/attachments/co-northwind.png
+01bae00ebf15cb13422481b6c5ff64b1b1f2529e5959875bc49271320695afc6  crm.table/tables/companies/attachments/co-quill.png
+db3c9832a345a3aebd408591a18f970aec93a41268a8d2fcfa2c1ca4671666d7  crm.table/tables/companies/attachments/co-tidal.png
 40f41714895d38086289279e3d6c20156ac5cd382ada1eccfff67a5f0a72fa89  crm.table/tables/companies/bodies/atlas-freight--wexwuo344aoowkqiieeb8fk56z.md
 1286961e19627a9e53275cde5db3643c403baf5077cd53926ddfc296a927f1c9  crm.table/tables/companies/meta.json
-37cbe065fc4744f14e33825331c5675960ac2863c6af581edb15db1b03932cc8  crm.table/tables/companies/rows/0001.ndjson
+4fd5911c0316fcb2d937a412c6c7827458565c347def3ce4100ee54b31268ed6  crm.table/tables/companies/rows/0001.ndjson
 b7e3df3ba59313121c51dd1f41edce574ce3e0ecf6886ee91061969b32908f69  crm.table/tables/companies/schema.json
 8ffc3f4ce3705dbbe01cf590bd4056be8219f9a2ad0e7687856e407dcd8e43d2  crm.table/tables/companies/views.json
 ee93039d9d9bd88e1be7c486f7ef8b807eeb3dea9d584c1e06e90a12cb5713ed  crm.table/tables/contacts/meta.json
@@ -20,7 +20,7 @@ a00d20454575d2e22945f46260921e53db2d5423ef98c275635d52ccbab58bf0  crm.table/tabl
 a675c84e653e5b76fd29422edf3e2f49cab8a329f92539184187d42ff6777613  crm.table/tables/deals/rows/0001.ndjson
 33883d62a477df5e2c77d83dc5e9bd6dc53e500a4bde264548eb970e724eb7ea  crm.table/tables/deals/schema.json
 946c0e8bbf76dee3cacd81319b725e66317b80724636732fdc6f688fff16598e  crm.table/tables/deals/views.json
-2eb0f088af55b013c00a3cdfea984910c05019b9183ed2d2367f3d1440d1d45f  single-file/crm.table
+9e2103c55deb1313b9094e20ab08f439d7f642434e33b547f1080a005b06996d  single-file/crm.table
 bdaac2d564e7d81eb9ffe2fcddd9d3090aded1b6f23ab56a73145a71156383b8  formula-errors.table/meta.json
 391f76a9ddaf59e06f4f764119dd2d9d29cc59d49ecbacd513cb7b1981f62c25  formula-errors.table/tables/errors/cells/0001.ndjson
 94c92834a8a34b352b7735f4e5acd3a6425e57ecb99f8481ffb4836186431d4c  formula-errors.table/tables/errors/meta.json
