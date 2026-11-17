@@ -6,8 +6,9 @@ a reader of them has to get right. See Fixtures/textbundle/README.md.
 
     python3 scripts/make-textbundles.py
 
-Needs macOS (`sips`, for HEIC) and Pillow (for WebP). The output is the
-same on every run: zip entries are sorted and dated 1 Nov 2026.
+Needs macOS (`sips`, for HEIC), Pillow (for WebP) and libjxl's `cjxl` (for
+JPEG XL; `brew install jpeg-xl`). The output is the same on every run: zip
+entries are sorted and dated 1 Nov 2026.
 """
 
 import io
@@ -23,6 +24,7 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parent.parent
 FIELD = ROOT / "Images" / "Field Notes"
 COAST = ROOT / "Images" / "Coast"
+PORTRAITS = ROOT / "Images" / "Portraits"
 OUT = ROOT / "Fixtures" / "textbundle"
 DATE = (2026, 11, 1, 0, 0, 0)
 
@@ -52,6 +54,12 @@ def save_heic(src: Path, dest: Path, long_side: int) -> None:
         ["sips", "-s", "format", "heic", "-Z", str(long_side), str(src), "--out", str(dest)],
         check=True, capture_output=True,
     )
+
+
+def save_jxl(src: Path, dest: Path, *options: str) -> None:
+    """JPEG XL by libjxl's own encoder: a JPEG given with no options is repacked losslessly."""
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    subprocess.run(["cjxl", *options, str(src), str(dest)], check=True, capture_output=True)
 
 
 def save_png(src: Path, dest: Path, long_side: int) -> None:
@@ -98,7 +106,7 @@ def write_zip(dest: Path, entries: list[tuple[str, Path | bytes | None]]) -> Non
                 continue
             data = source if isinstance(source, bytes) else source.read_bytes()
             # Images are already compressed: stored, as most apps do.
-            info.compress_type = zipfile.ZIP_STORED if name.lower().endswith((".jpg", ".png", ".heic", ".webp")) else zipfile.ZIP_DEFLATED
+            info.compress_type = zipfile.ZIP_STORED if name.lower().endswith((".jpg", ".png", ".heic", ".webp", ".jxl")) else zipfile.ZIP_DEFLATED
             zf.writestr(info, data)
 
 
@@ -109,6 +117,42 @@ def pack(bundle: Path, dest: Path, inside_folder: bool = True) -> None:
 
 
 # ---------- Texts ----------
+
+JPEG_XL = """\
+# JPEG XL
+
+Each image below is a JPEG XL file (`.jxl`), made by libjxl's own encoder. A reader that shows JPEG XL shows all four photos; one that doesn't shows their alt text.
+
+## A JPEG, repacked losslessly
+
+The same JPEG, about 15% smaller here (443 KB from 519 KB), and the identical JPEG can be had back from it (`djxl`). This is what keeping a workspace's images small would do.
+
+![Beach huts in a row, repacked from a JPEG](assets/beach-huts.jxl)
+
+## Lossy
+
+Encoded from the photo at distance 1.5: smaller again, and not the same pixels.
+
+![Chalk cliffs above the sea, lossy JPEG XL](assets/cliffs.jxl)
+
+## Lossless, from a PNG
+
+Every pixel of the PNG kept.
+
+![A portrait, lossless JPEG XL from a PNG](assets/portrait-lossless.jxl)
+
+## In HTML
+
+The same repacked JPEG, by an `<img>`:
+
+<img src="assets/beach-huts.jxl" alt="Beach huts by an HTML image" width="240">
+
+## Damaged
+
+The file is cut short: a reader shows the alt text, as for any image it can't read.
+
+![This JPEG XL file is damaged](assets/damaged.jxl)
+"""
 
 FIELD_NOTES = """\
 # Field Notes: the river walk
@@ -299,6 +343,26 @@ def main() -> None:
         ("../escape.png", tiny.getvalue()),
         ("/abs.png", tiny.getvalue()),
     ])
+
+    # JPEG XL: a JPEG repacked losslessly, a lossy one, a lossless one from a
+    # PNG, and one cut short. Built in a temporary folder: only the pack is kept.
+    with tempfile.TemporaryDirectory() as tmp:
+        jxl = Path(tmp) / "JPEG XL.textbundle"
+        jxl.mkdir()
+        (jxl / "text.md").write_text(JPEG_XL, encoding="utf-8")
+        write_info(jxl, {"version": 2, "type": "net.daringfireball.markdown", "creatorIdentifier": "com.example.notes"})
+        huts = Path(tmp) / "beach-huts.jpg"
+        save_jpeg(resized(COAST / "beach-huts.jpg", 1600), huts)
+        save_jxl(huts, jxl / "assets" / "beach-huts.jxl")
+        cliffs = Path(tmp) / "cliffs.png"
+        resized(COAST / "cliffs.jpg", 1600).save(cliffs, "PNG")
+        save_jxl(cliffs, jxl / "assets" / "cliffs.jxl", "-d", "1.5")
+        portrait = Path(tmp) / "portrait.png"
+        save_png(PORTRAITS / "portrait-05-B.png", portrait, 900)
+        save_jxl(portrait, jxl / "assets" / "portrait-lossless.jxl", "-d", "0")
+        whole = (jxl / "assets" / "cliffs.jxl").read_bytes()
+        (jxl / "assets" / "damaged.jxl").write_bytes(whole[: len(whole) // 3])
+        pack(jxl, OUT / "JPEG XL.textpack")
 
     # Large: twelve photos enlarged to 3,072 px on the long side, for timing
     # opening and unzipping. Built in a temporary folder: only the pack is kept.
