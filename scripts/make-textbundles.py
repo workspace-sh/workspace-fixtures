@@ -147,11 +147,17 @@ The same repacked JPEG, by an `<img>`:
 
 <img src="assets/beach-huts.jxl" alt="Beach huts by an HTML image" width="240">
 
-## Damaged
+## Cut short
 
-The file is cut short: a reader shows the alt text, as for any image it can't read.
+The lossy photo's first third, as if it stopped downloading. Apple's decoder shows the image at its full size, blank where the data is missing (dark on a dark page), as a browser shows a part-loaded image.
 
-![This JPEG XL file is damaged](assets/damaged.jxl)
+![Chalk cliffs, cut short](assets/cut-short.jxl)
+
+## Not JPEG XL
+
+A text file named `.jxl`: nothing can decode it, so a reader shows the alt text.
+
+![This file isn't really JPEG XL](assets/not-jpeg-xl.jxl)
 """
 
 FIELD_NOTES = """\
@@ -345,7 +351,7 @@ def main() -> None:
     ])
 
     # JPEG XL: a JPEG repacked losslessly, a lossy one, a lossless one from a
-    # PNG, and one cut short. Built in a temporary folder: only the pack is kept.
+    # PNG, one cut short, and a file that isn't JPEG XL at all. Built in a temporary folder: only the pack is kept.
     with tempfile.TemporaryDirectory() as tmp:
         jxl = Path(tmp) / "JPEG XL.textbundle"
         jxl.mkdir()
@@ -361,7 +367,8 @@ def main() -> None:
         save_png(PORTRAITS / "portrait-05-B.png", portrait, 900)
         save_jxl(portrait, jxl / "assets" / "portrait-lossless.jxl", "-d", "0")
         whole = (jxl / "assets" / "cliffs.jxl").read_bytes()
-        (jxl / "assets" / "damaged.jxl").write_bytes(whole[: len(whole) // 3])
+        (jxl / "assets" / "cut-short.jxl").write_bytes(whole[: len(whole) // 3])
+        (jxl / "assets" / "not-jpeg-xl.jxl").write_bytes(b"This is not a JPEG XL file, whatever its name says.\n")
         pack(jxl, OUT / "JPEG XL.textpack")
 
     # Large: twelve photos enlarged to 3,072 px on the long side, for timing
