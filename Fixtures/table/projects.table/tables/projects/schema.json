@@ -12,14 +12,12 @@
       "id": "ct5d6ndk38c8d",
       "name": "status",
       "type": "string",
-      "constraints": {
-        "enum": [
-          "planning",
-          "active",
-          "on-hold",
-          "done"
-        ]
-      }
+      "categories": [
+        "planning",
+        "active",
+        "on-hold",
+        "done"
+      ]
     },
     {
       "id": "yr8ozrtbxgqew",
@@ -30,7 +28,7 @@
       "id": "pio7bjir814ui",
       "name": "budget",
       "type": "number",
-      "format": "currency:USD"
+      "display": "currency:USD"
     },
     {
       "id": "eh7e4khtyxy3q",
@@ -41,7 +39,7 @@
       "id": "ej3mhf9y1u1bq",
       "name": "summary",
       "type": "string",
-      "format": "markdown"
+      "display": "markdown"
     },
     {
       "id": "q7pgmobychcd7",

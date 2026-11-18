@@ -35,39 +35,39 @@
       "name": "stage",
       "type": "string",
       "title": "Stage",
+      "categories": [
+        {
+          "value": "lead",
+          "label": "Lead",
+          "color": "gray"
+        },
+        {
+          "value": "qualified",
+          "label": "Qualified",
+          "color": "blue"
+        },
+        {
+          "value": "proposal",
+          "label": "Proposal",
+          "color": "purple"
+        },
+        {
+          "value": "negotiation",
+          "label": "Negotiation",
+          "color": "orange"
+        },
+        {
+          "value": "won",
+          "label": "Won",
+          "color": "green"
+        },
+        {
+          "value": "lost",
+          "label": "Lost",
+          "color": "red"
+        }
+      ],
       "constraints": {
-        "enum": [
-          {
-            "value": "lead",
-            "label": "Lead",
-            "color": "gray"
-          },
-          {
-            "value": "qualified",
-            "label": "Qualified",
-            "color": "blue"
-          },
-          {
-            "value": "proposal",
-            "label": "Proposal",
-            "color": "purple"
-          },
-          {
-            "value": "negotiation",
-            "label": "Negotiation",
-            "color": "orange"
-          },
-          {
-            "value": "won",
-            "label": "Won",
-            "color": "green"
-          },
-          {
-            "value": "lost",
-            "label": "Lost",
-            "color": "red"
-          }
-        ],
         "required": true
       }
     },
@@ -76,19 +76,19 @@
       "name": "value",
       "type": "number",
       "title": "Value",
-      "format": "currency:USD",
-      "align": "end"
+      "align": "end",
+      "display": "currency:USD"
     },
     {
       "id": "gqhzunramagty",
       "name": "probability",
       "type": "number",
       "title": "Probability",
-      "format": "percent",
       "constraints": {
         "minimum": 0,
         "maximum": 1
-      }
+      },
+      "display": "percent"
     },
     {
       "id": "x638q3pmppoye",
@@ -141,11 +141,11 @@
       "type": "number",
       "title": "Company pipeline",
       "description": "The company's whole open pipeline: its rollup of every open deal, this one included (#123).",
-      "format": "currency:USD",
       "computed": {
         "expr": "(related \"company\" \"open_pipeline\")",
         "dialect": "table-expr-v1"
-      }
+      },
+      "display": "currency:USD"
     }
   ],
   "schema-version": 1

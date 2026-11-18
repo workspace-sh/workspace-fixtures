@@ -21,13 +21,11 @@
       "id": "ct5d6ndk38c8d",
       "name": "status",
       "type": "string",
-      "constraints": {
-        "enum": [
-          "todo",
-          "doing",
-          "done"
-        ]
-      }
+      "categories": [
+        "todo",
+        "doing",
+        "done"
+      ]
     },
     {
       "id": "nqhx3hc8c9a4i",
