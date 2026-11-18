@@ -40,24 +40,24 @@
       "name": "unit_price",
       "type": "number",
       "title": "Unit price",
-      "format": "currency:GBP",
       "description": "Looked up from the product (D36).",
       "computed": {
         "expr": "(related \"product\" \"price\")",
         "dialect": "table-expr-v1"
-      }
+      },
+      "display": "currency:GBP"
     },
     {
       "id": "8nj5bdwnbdxp4",
       "name": "line_total",
       "type": "number",
       "title": "Line total",
-      "format": "currency:GBP",
       "description": "Quantity times unit price.",
       "computed": {
         "expr": "(* quantity unit_price)",
         "dialect": "table-expr-v1"
-      }
+      },
+      "display": "currency:GBP"
     }
   ],
   "schema-version": 1
