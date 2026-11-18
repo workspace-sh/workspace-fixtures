@@ -24,40 +24,38 @@
       "name": "category",
       "type": "string",
       "title": "Category",
-      "constraints": {
-        "enum": [
-          {
-            "value": "coffee",
-            "label": "Coffee",
-            "color": "orange"
-          },
-          {
-            "value": "tea",
-            "label": "Tea",
-            "color": "green"
-          },
-          {
-            "value": "equipment",
-            "label": "Equipment",
-            "color": "gray"
-          },
-          {
-            "value": "merch",
-            "label": "Merch",
-            "color": "purple"
-          }
-        ]
-      }
+      "categories": [
+        {
+          "value": "coffee",
+          "label": "Coffee",
+          "color": "orange"
+        },
+        {
+          "value": "tea",
+          "label": "Tea",
+          "color": "green"
+        },
+        {
+          "value": "equipment",
+          "label": "Equipment",
+          "color": "gray"
+        },
+        {
+          "value": "merch",
+          "label": "Merch",
+          "color": "purple"
+        }
+      ]
     },
     {
       "id": "xiyakxmw7ii5m",
       "name": "price",
       "type": "number",
       "title": "Price",
-      "format": "currency:GBP",
       "constraints": {
         "minimum": 0
-      }
+      },
+      "display": "currency:GBP"
     },
     {
       "id": "mwducew9zqd66",
@@ -84,12 +82,12 @@
       "name": "revenue",
       "type": "number",
       "title": "Revenue",
-      "format": "currency:GBP",
       "description": "The total of every order line for this product.",
       "computed": {
         "expr": "(sum (linked \"lines\" \"product\" \"line_total\"))",
         "dialect": "table-expr-v1"
-      }
+      },
+      "display": "currency:GBP"
     }
   ],
   "schema-version": 1

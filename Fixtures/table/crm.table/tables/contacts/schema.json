@@ -34,8 +34,8 @@
       "name": "phone",
       "type": "string",
       "title": "Phone",
-      "format": "phone",
-      "description": "Stored as text: a phone number is not a number."
+      "description": "Stored as text: a phone number is not a number.",
+      "display": "phone"
     },
     {
       "id": "8hq1hqqttndpp",
@@ -48,7 +48,7 @@
       "name": "last_contacted",
       "type": "datetime",
       "title": "Last contacted",
-      "format": "relative"
+      "display": "relative"
     }
   ],
   "schema-version": 1

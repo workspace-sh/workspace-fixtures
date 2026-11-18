@@ -25,7 +25,7 @@
       "name": "website",
       "type": "string",
       "title": "Website",
-      "format": "url"
+      "format": "uri"
     },
     {
       "id": "cbs3num9xuqbe",
@@ -33,34 +33,32 @@
       "type": "string",
       "title": "Industry",
       "icon": "🏷️",
-      "constraints": {
-        "enum": [
-          {
-            "value": "Retail",
-            "color": "orange"
-          },
-          {
-            "value": "Healthcare",
-            "color": "green"
-          },
-          {
-            "value": "Logistics",
-            "color": "blue"
-          },
-          {
-            "value": "Media",
-            "color": "purple"
-          },
-          {
-            "value": "Energy",
-            "color": "yellow"
-          },
-          {
-            "value": "Design",
-            "color": "pink"
-          }
-        ]
-      }
+      "categories": [
+        {
+          "value": "Retail",
+          "color": "orange"
+        },
+        {
+          "value": "Healthcare",
+          "color": "green"
+        },
+        {
+          "value": "Logistics",
+          "color": "blue"
+        },
+        {
+          "value": "Media",
+          "color": "purple"
+        },
+        {
+          "value": "Energy",
+          "color": "yellow"
+        },
+        {
+          "value": "Design",
+          "color": "pink"
+        }
+      ]
     },
     {
       "id": "8kggyzjcrbp75",
@@ -83,8 +81,8 @@
       "name": "growth",
       "type": "number",
       "title": "Growth",
-      "format": "percent",
-      "description": "Headcount growth over the last year."
+      "description": "Headcount growth over the last year.",
+      "display": "percent"
     },
     {
       "id": "pmiidt4zkgr5y",
@@ -99,54 +97,52 @@
       "type": "array",
       "title": "Tags",
       "description": "A multi-select: any number of these tags (D35).",
-      "constraints": {
-        "enum": [
-          {
-            "value": "enterprise",
-            "color": "blue"
-          },
-          {
-            "value": "startup",
-            "color": "green"
-          },
-          {
-            "value": "agency",
-            "color": "pink"
-          },
-          {
-            "value": "emea",
-            "color": "purple"
-          },
-          {
-            "value": "priority",
-            "color": "red"
-          },
-          {
-            "value": "wholesale",
-            "color": "orange"
-          },
-          {
-            "value": "clinics",
-            "color": "yellow"
-          },
-          {
-            "value": "renewables",
-            "color": "gray"
-          }
-        ]
-      }
+      "categories": [
+        {
+          "value": "enterprise",
+          "color": "blue"
+        },
+        {
+          "value": "startup",
+          "color": "green"
+        },
+        {
+          "value": "agency",
+          "color": "pink"
+        },
+        {
+          "value": "emea",
+          "color": "purple"
+        },
+        {
+          "value": "priority",
+          "color": "red"
+        },
+        {
+          "value": "wholesale",
+          "color": "orange"
+        },
+        {
+          "value": "clinics",
+          "color": "yellow"
+        },
+        {
+          "value": "renewables",
+          "color": "gray"
+        }
+      ]
     },
     {
       "id": "c84gaouo69mpf",
       "name": "open_pipeline",
       "type": "number",
       "title": "Open pipeline",
-      "format": "currency:USD",
       "description": "The sum of this company's open deals: a rollup over the deals that link here (D36).",
       "computed": {
         "expr": "(sum (linked \"deals\" \"company\" \"open_value\"))",
         "dialect": "table-expr-v1"
-      }
+      },
+      "display": "currency:USD"
     },
     {
       "id": "jx6u8xw3y4u1a",
