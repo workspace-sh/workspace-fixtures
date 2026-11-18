@@ -2,7 +2,7 @@
 
 [TextBundles](https://textbundle.org/spec/) (`.textbundle`, a folder) and TextPacks (`.textpack`, a zip of one): a Markdown or plain-text document with its images. Each fixture here tests something a reader has to get right.
 
-All of them are made by [`scripts/make-textbundles.py`](../../scripts/make-textbundles.py) from the images in [`Images/Field Notes/`](../../Images/Field%20Notes/) and [`Images/Coast/`](../../Images/Coast/). Change the script and run it again rather than editing a fixture by hand. It writes the same bytes on every run.
+All of them are made by [`scripts/make-textbundles.py`](../../scripts/make-textbundles.py) from the images in [`Images/Field Notes/`](../../Images/Field%20Notes/), [`Images/Coast/`](../../Images/Coast/) and [`Images/Portraits/`](../../Images/Portraits/). Change the script and run it again rather than editing a fixture by hand. It writes the same bytes on every run.
 
 | Fixture | What it tests |
 |---|---|
@@ -15,6 +15,7 @@ All of them are made by [`scripts/make-textbundles.py`](../../scripts/make-textb
 | `No Info.textbundle` | No `info.json` at all, which the spec asks for: still opens, as Markdown. |
 | `Broken.textpack` | Not a zip, whatever its name says: unreadable, not missing. |
 | `Unsafe.textpack` | A valid pack, plus entries named `../escape.png` and `/abs.png`. A reader must never write them outside the folder it unpacks into. |
+| `JPEG XL.textpack` | JPEG XL images (`.jxl`): a JPEG repacked losslessly (about 15% smaller, the identical JPEG recoverable), a lossy encode, a lossless encode of a PNG, the repacked one again by an HTML `<img>`, one cut short (Apple's decoder shows it full size, blank where data is missing), and a text file named `.jxl`, which shows its alt text. Made with libjxl's `cjxl`. |
 | `Travel Journal.textpack` | Large: a week's journal with twelve photos enlarged to 3,072 px on the long side (17 MB), for timing opening and unzipping. |
 
 Images in a pack are stored, not compressed again, as most apps write them. The rest are deflated.
