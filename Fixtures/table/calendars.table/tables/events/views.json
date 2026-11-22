@@ -1,0 +1,165 @@
+[
+  {
+    "id": "4o3xeghnb4z7k",
+    "name": "Schedule",
+    "layout": "calendar",
+    "calendar_field": "start",
+    "calendar_end_field": "end",
+    "colors": [
+      {
+        "filter": [
+          {
+            "field": "kind",
+            "operator": "eq",
+            "value": "Work"
+          }
+        ],
+        "color": "blue"
+      },
+      {
+        "filter": [
+          {
+            "field": "kind",
+            "operator": "eq",
+            "value": "Personal"
+          }
+        ],
+        "color": "green"
+      },
+      {
+        "filter": [
+          {
+            "field": "kind",
+            "operator": "eq",
+            "value": "Travel"
+          }
+        ],
+        "color": "orange"
+      },
+      {
+        "filter": [
+          {
+            "field": "kind",
+            "operator": "eq",
+            "value": "Holiday"
+          }
+        ],
+        "color": "purple"
+      }
+    ]
+  },
+  {
+    "id": "rt9k16aicojma",
+    "name": "Starts only",
+    "layout": "calendar",
+    "calendar_field": "start",
+    "colors": [
+      {
+        "filter": [
+          {
+            "field": "kind",
+            "operator": "eq",
+            "value": "Work"
+          }
+        ],
+        "color": "blue"
+      },
+      {
+        "filter": [
+          {
+            "field": "kind",
+            "operator": "eq",
+            "value": "Personal"
+          }
+        ],
+        "color": "green"
+      },
+      {
+        "filter": [
+          {
+            "field": "kind",
+            "operator": "eq",
+            "value": "Travel"
+          }
+        ],
+        "color": "orange"
+      },
+      {
+        "filter": [
+          {
+            "field": "kind",
+            "operator": "eq",
+            "value": "Holiday"
+          }
+        ],
+        "color": "purple"
+      }
+    ]
+  },
+  {
+    "id": "qrjym16ikwcto",
+    "name": "December only",
+    "layout": "calendar",
+    "calendar_field": "start",
+    "calendar_end_field": "end",
+    "calendar_range": {
+      "start": "2026-12-01",
+      "end": "2026-12-31"
+    },
+    "colors": [
+      {
+        "filter": [
+          {
+            "field": "kind",
+            "operator": "eq",
+            "value": "Work"
+          }
+        ],
+        "color": "blue"
+      },
+      {
+        "filter": [
+          {
+            "field": "kind",
+            "operator": "eq",
+            "value": "Personal"
+          }
+        ],
+        "color": "green"
+      },
+      {
+        "filter": [
+          {
+            "field": "kind",
+            "operator": "eq",
+            "value": "Travel"
+          }
+        ],
+        "color": "orange"
+      },
+      {
+        "filter": [
+          {
+            "field": "kind",
+            "operator": "eq",
+            "value": "Holiday"
+          }
+        ],
+        "color": "purple"
+      }
+    ]
+  },
+  {
+    "id": "b78hjihrd38gm",
+    "name": "All events",
+    "layout": "table",
+    "fields": [
+      "title",
+      "kind",
+      "start",
+      "end",
+      "place",
+      "case"
+    ]
+  }
+]
