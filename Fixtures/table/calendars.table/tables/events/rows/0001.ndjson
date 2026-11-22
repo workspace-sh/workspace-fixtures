@@ -7,8 +7,8 @@
 {"id":"g5fy8ogdq5t9qux9ycgnd8k8x7","title":"Early flight","kind":"Travel","start":"2026-11-25T05:45:00","end":"2026-11-25T08:10:00","place":"Airport","case":"Widens the hours earlier"}
 {"id":"n3d873ysbu58e97odx6cd81dkp","title":"Late release","kind":"Work","start":"2026-11-25T21:00:00","end":"2026-11-25T23:30:00","place":"Home","case":"Widens the hours later"}
 {"id":"gw4drps85sd59bs4w75m8xi4f8","title":"Night shift","kind":"Work","start":"2026-11-26T22:00:00","end":"2026-11-27T06:00:00","place":"Studio","case":"Crosses midnight"}
-{"id":"8wwgiu7iynqc347azsa5q1wc8i","title":"Call with Tokyo","kind":"Work","start":"2026-11-27T08:00:00+09:00","end":"2026-11-27T09:00:00+09:00","place":"Video","case":"A written offset, shown as written"}
-{"id":"9j5wsx67nm47r3juw4f51sqjfa","title":"UTC sync","kind":"Work","start":"2026-11-27T15:00:00Z","end":"2026-11-27T15:30:00Z","place":"Video","case":"A UTC time"}
+{"id":"8wwgiu7iynqc347azsa5q1wc8i","title":"Call with Tokyo","kind":"Work","start":"2026-11-27T08:00:00+09:00","end":"2026-11-27T09:00:00+09:00","place":"Video","case":"An instant with an offset, on the reader's clock"}
+{"id":"9j5wsx67nm47r3juw4f51sqjfa","title":"UTC sync","kind":"Work","start":"2026-11-27T15:00:00Z","end":"2026-11-27T15:30:00Z","place":"Video","case":"An instant in UTC, on the reader's clock"}
 {"id":"x8kdn6a8aa4t3kceysrkty9zne","title":"End before start","kind":"Work","start":"2026-11-28T12:00:00","end":"2026-11-28T10:00:00","place":"Studio","case":"A reversed end is one entry at its start"}
 {"id":"fo9syfkua63n6x35firnunhj9a","title":"Lisbon conference","kind":"Travel","start":"2026-12-07T09:00:00","end":"2026-12-11T17:00:00","place":"Lisbon","case":"A timed entry over five days"}
 {"id":"bk4hmrrwf4fyraotyn38oh43q4","title":"Weekend away","kind":"Personal","start":"2026-12-12T18:00:00","end":"2026-12-14T10:00:00","place":"Coast","case":"Spans a week's edge"}
