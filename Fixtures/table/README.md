@@ -4,10 +4,11 @@ The `.table` fixtures: the example tables every app and test opens, and large ta
 
 ## The example files
 
-`crm.table`, `formula-errors.table`, `household-budget.table`, `library.table`, `projects.table` and `shop.table` are what table-file-format's tests read and what the web, Mac, iOS, Android and Linux demo apps open at launch. They're edited here, in a table-file-format checkout's `workspace-fixtures/` submodule, and committed to this repository first. table-file-format then moves its submodule to that commit.
+`calendars.table`, `crm.table`, `formula-errors.table`, `household-budget.table`, `library.table`, `projects.table` and `shop.table` are what table-file-format's tests read and what the web, Mac, iOS, Android and Linux demo apps open at launch. They're edited here, in a table-file-format checkout's `workspace-fixtures/` submodule, and committed to this repository first. table-file-format then moves its submodule to that commit.
 
 | File | Tables | What it exercises |
 |---|---|---|
+| `calendars.table` | events, milestones | every case a calendar draws: times, overlaps, spans across weeks, months and years, busy days, undated rows, reversed ends, offsets, leap and daylight-saving days, long and right-to-left titles |
 | `crm.table` | companies, contacts, deals | links between tables, logos as attachments, a board, a gallery, a calendar, totals |
 | `formula-errors.table` | errors | every error a formula can give, a row each, shown in plain words with its mark (table-file-format D61) |
 | `household-budget.table` | budget, ledger | a sheet view (lettered columns, numbered rows), formulas, currency, totals |
