@@ -1,0 +1,63 @@
+{
+  "fields": [
+    {
+      "id": "hf9cfse4ym9gi",
+      "name": "title",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "id": "tzg9m5qut8hpd",
+      "name": "kind",
+      "type": "string",
+      "categories": [
+        {
+          "value": "Work",
+          "color": "blue"
+        },
+        {
+          "value": "Personal",
+          "color": "green"
+        },
+        {
+          "value": "Travel",
+          "color": "orange"
+        },
+        {
+          "value": "Holiday",
+          "color": "purple"
+        }
+      ]
+    },
+    {
+      "id": "388ctekf9nczf",
+      "name": "start",
+      "type": "datetime",
+      "title": "Starts"
+    },
+    {
+      "id": "mp44u4oi5x14n",
+      "name": "end",
+      "type": "datetime",
+      "title": "Ends"
+    },
+    {
+      "id": "nbd98nex6ffpq",
+      "name": "place",
+      "type": "string",
+      "title": "Place"
+    },
+    {
+      "id": "8pqrfnukumyg8",
+      "name": "case",
+      "type": "string",
+      "title": "What it tests"
+    }
+  ],
+  "primaryKey": [
+    "title"
+  ],
+  "schema-version": 1
+}

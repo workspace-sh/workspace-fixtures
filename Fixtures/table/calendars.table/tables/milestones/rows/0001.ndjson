@@ -1,0 +1,21 @@
+{"id":"xegrsex96sun6jhxktq9u5be94","title":"Today-ish review","kind":"Work","from":"2026-11-22","case":"A single all-day entry"}
+{"id":"gyh8413q63a8ypkywm5jcuckpn","title":"Sprint 24","kind":"Work","from":"2026-11-23","to":"2026-12-04","case":"Spans two weeks"}
+{"id":"tywxsfxzufj8ah7gj9ni93u8p5","title":"Budget freeze","kind":"Work","from":"2026-11-25","to":"2026-11-27","case":"Stacks under the sprint"}
+{"id":"mfxkxt3w91zr5r89j3arf4p17s","title":"Visitors staying","kind":"Personal","from":"2026-11-26","to":"2026-11-29","case":"Crosses the weekend"}
+{"id":"973qyog5arctf55t75r17b94iu","title":"Advent market","kind":"Holiday","from":"2026-11-27","to":"2026-12-23","case":"Spans a month's edge"}
+{"id":"p1q6h3gekp38ogfn1f6agst9td","title":"Office closed","kind":"Holiday","from":"2026-12-24","to":"2027-01-01","case":"Spans a year's edge"}
+{"id":"6h6k14r9emjzh53e1t1sg4n6mf","title":"Christmas Day","kind":"Holiday","from":"2026-12-25","case":"One day inside a span"}
+{"id":"abctr9d9r57sghf4goutygrr4y","title":"New Year's Day","kind":"Holiday","from":"2027-01-01","case":"First of the year"}
+{"id":"h4omyab1xhb1j54orepn1shi4p","title":"Sprint 25","kind":"Work","from":"2026-12-07","to":"2026-12-18","case":"Follows the last sprint"}
+{"id":"ecqbr5yadrx3rs9mdgmh3w1hk7","title":"Reversed dates","kind":"Work","from":"2026-12-15","to":"2026-12-10","case":"A reversed end is one day"}
+{"id":"7yy85864tnmp8bhgwezpwd97ki","title":"Quarter planning","kind":"Work","from":"2027-01-11","to":"2027-01-15","case":"One working week"}
+{"id":"wcncfy5igwxbiz16uh8qrmqiyz","title":"Long project","kind":"Work","from":"2027-01-04","to":"2027-03-26","case":"A bar across many weeks"}
+{"id":"bib8zaq3rrbp87ptrwwodog5ia","title":"Month start","kind":"Personal","from":"2027-02-01","case":"On a month's first day"}
+{"id":"cdkuxs71fmczzew53yw8ubusf4","title":"Month end","kind":"Personal","from":"2027-02-28","case":"On a short month's last day"}
+{"id":"oxcbh9eoozgfznh93f947ohk9f","title":"Leap day deadline","kind":"Work","from":"2028-02-29","case":"On a leap day"}
+{"id":"589sdyojh8ogyumdkjcc3ukk45","title":"Long ago","kind":"Personal","from":"1999-12-31","case":"Far from today"}
+{"id":"557piz6dmmdpog1ef4o79d7yti","title":"Far ahead","kind":"Personal","from":"2040-06-15","case":"A jump to a distant date"}
+{"id":"6jgd5stye1r873wf7or4d6zmyw","title":"A title long enough that it has to be cut short in any day cell of the month","kind":"Work","from":"2026-12-03","to":"2026-12-03","case":"A very long title"}
+{"id":"chhqqaak47qbzmuukhcuaswxgo","title":"日本語のタイトル","kind":"Personal","from":"2026-12-05","case":"Non-Latin text"}
+{"id":"tfkj6kdmdwaiiyfsgm9wsrjog3","title":"عنوان بالعربية","kind":"Personal","from":"2026-12-06","case":"Right-to-left text"}
+{"id":"m8ddkkbxtdpdq311n7xctw918b","title":"Not scheduled yet","kind":"Work","case":"No date: in the No Date list"}

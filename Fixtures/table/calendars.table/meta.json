@@ -1,0 +1,13 @@
+{
+  "format": "table",
+  "formatVersion": 3,
+  "title": "Calendars",
+  "description": "Every case a calendar view has to draw: times, overlaps, spans, busy days, undated rows and awkward dates.",
+  "tables": [
+    "events",
+    "milestones"
+  ],
+  "created_at": "2026-11-22T00:00:00Z",
+  "modified_at": "2026-11-22T00:00:00Z",
+  "generator": "table-file-format fixture"
+}

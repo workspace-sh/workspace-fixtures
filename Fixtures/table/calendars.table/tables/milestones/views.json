@@ -1,0 +1,111 @@
+[
+  {
+    "id": "6upq9tqutnqp3",
+    "name": "Timeline",
+    "layout": "calendar",
+    "calendar_field": "from",
+    "calendar_end_field": "to",
+    "colors": [
+      {
+        "filter": [
+          {
+            "field": "kind",
+            "operator": "eq",
+            "value": "Work"
+          }
+        ],
+        "color": "blue"
+      },
+      {
+        "filter": [
+          {
+            "field": "kind",
+            "operator": "eq",
+            "value": "Personal"
+          }
+        ],
+        "color": "green"
+      },
+      {
+        "filter": [
+          {
+            "field": "kind",
+            "operator": "eq",
+            "value": "Travel"
+          }
+        ],
+        "color": "orange"
+      },
+      {
+        "filter": [
+          {
+            "field": "kind",
+            "operator": "eq",
+            "value": "Holiday"
+          }
+        ],
+        "color": "purple"
+      }
+    ]
+  },
+  {
+    "id": "sdowr4syxsgic",
+    "name": "Single days",
+    "layout": "calendar",
+    "calendar_field": "from",
+    "colors": [
+      {
+        "filter": [
+          {
+            "field": "kind",
+            "operator": "eq",
+            "value": "Work"
+          }
+        ],
+        "color": "blue"
+      },
+      {
+        "filter": [
+          {
+            "field": "kind",
+            "operator": "eq",
+            "value": "Personal"
+          }
+        ],
+        "color": "green"
+      },
+      {
+        "filter": [
+          {
+            "field": "kind",
+            "operator": "eq",
+            "value": "Travel"
+          }
+        ],
+        "color": "orange"
+      },
+      {
+        "filter": [
+          {
+            "field": "kind",
+            "operator": "eq",
+            "value": "Holiday"
+          }
+        ],
+        "color": "purple"
+      }
+    ]
+  },
+  {
+    "id": "dg6eshmd5j8kj",
+    "name": "All milestones",
+    "layout": "table",
+    "fields": [
+      "title",
+      "kind",
+      "from",
+      "to",
+      "case"
+    ]
+  }
+]
