@@ -1,4 +1,14 @@
-# The example tables from workspace-sh/workspace-fixtures Fixtures/table (a1e453b 2026-11-03), written by table-file-format's npm run fixtures:export.
+# The example tables from workspace-sh/workspace-fixtures Fixtures/table (5bfe03b 2026-11-22), written by table-file-format's npm run fixtures:export.
+bf0ae7a9ce6e4a6ba44f4773d760745ba5fb3f07f492ea74d0689d3a94fd2782  calendars.table/meta.json
+f8a193d6de27c54507467d296295de65b9df2914578237aad7f22594a23489c7  calendars.table/tables/events/meta.json
+b11a01e6f9415c9c2a210d3a8357c6338e111136714b0ca2abb71733ec2b5416  calendars.table/tables/events/rows/0001.ndjson
+d807c987c1cbf9cbda453a9ea57a529fcc83aca685bc5aa04c4a5ced1430ee63  calendars.table/tables/events/schema.json
+7b005900d0da8b59881f78daae85d63c1dcfd4628b190ee377ae5cdc916c782b  calendars.table/tables/events/views.json
+19fb50e7661d8e9ca3299350d869f22bbdafa8fd5d9bcfa7f21d8c71b0a9ff09  calendars.table/tables/milestones/meta.json
+b74a85e3b58aaab4d9aa85f3be12bff3169608400f828a4973e6217322c4a9bc  calendars.table/tables/milestones/rows/0001.ndjson
+3ab344babd9ed0ce996d32ccc8d28887b3574a40b6ceb654cd7a9f6641582e1e  calendars.table/tables/milestones/schema.json
+c0eb9838324b17ed978999875d02baa3df1881da7e2c5ee744984fe4a43c6781  calendars.table/tables/milestones/views.json
+140571aa8e436998c797cf703d73455107a564d4bfb5e2a12c157bdb648a343c  single-file/calendars.table
 e5f07c00ed54106be7d6bd9f3260fdbd5d9c5bba3896cf764d4f9628514a68e8  crm.table/meta.json
 3ebb84669fac94782253eec1813d4f1df3d3d1b747aefc4853c0987d000be5f0  crm.table/tables/companies/attachments/co-atlas.svg
 34a8ea8be25b24886a65916c32c021b01de654d6f1f3c0d299a676928207008f  crm.table/tables/companies/attachments/co-fern.svg
