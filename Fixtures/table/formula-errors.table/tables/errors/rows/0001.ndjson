@@ -17,3 +17,12 @@
 {"id":"ks5oftw5yawe69icixdyz1fnht","problem":"True/false column","n":3}
 {"id":"x5pqi3iomy4mfam83wxpp7shrk","problem":"Text column","n":3}
 {"id":"cab8jj5uq3n4x83sptekxchmnf","problem":"Map point column","n":3}
+{"id":"kxzf315hhh8gcqux11uejmicok","problem":"Date and time column","n":3}
+{"id":"pfc6zduogry5jbse1t54ngpyen","problem":"Time column","n":3}
+{"id":"jjiqbwg5797zxu1bii61xz4iaw","problem":"Year column","n":3}
+{"id":"drhjo3m7suedue4nr5dq96fk35","problem":"Year and month column","n":3}
+{"id":"fi5s8zzakoa8a1rse6bntd9hth","problem":"Duration column","n":3}
+{"id":"jx9wqgd3rx6rp6tkdcjygmw5p6","problem":"List column","n":3}
+{"id":"i59ttntgcgfwn5ocd3eocm8kcq","problem":"Object column","n":3}
+{"id":"f6w84i7mqetst5a4s3ck4a48fq","problem":"Map shape column","n":3}
+{"id":"sbsh3j3wkpe3haesneno3tedj9","problem":"Any column, an error carried","n":3}
