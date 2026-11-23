@@ -460,7 +460,7 @@
         "table": "errors",
         "view": "All errors",
         "layout": "table",
-        "rows": 19,
+        "rows": 28,
         "first": [
           "Divide by zero",
           "Overflow",
