@@ -1,0 +1,31 @@
+[
+  {
+    "id": "huhru65jt4uqb",
+    "name": "Every problem",
+    "layout": "table",
+    "fields": [
+      "problem",
+      "rule",
+      "amount",
+      "rate",
+      "whole",
+      "month",
+      "due",
+      "status",
+      "tags",
+      "code",
+      "email",
+      "sku",
+      "region",
+      "person",
+      "week",
+      "owner",
+      "file",
+      "again"
+    ],
+    "columnWidths": {
+      "problem": 360,
+      "rule": 170
+    }
+  }
+]

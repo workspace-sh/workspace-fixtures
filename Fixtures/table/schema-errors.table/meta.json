@@ -1,0 +1,9 @@
+{
+  "format": "table",
+  "formatVersion": 3,
+  "title": "Schema errors",
+  "tables": [
+    "problems",
+    "people"
+  ]
+}

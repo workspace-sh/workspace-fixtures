@@ -17,3 +17,12 @@
 {"id":"ks5oftw5yawe69icixdyz1fnht","field":"yes_no","expr":"(+ n 1)"}
 {"id":"x5pqi3iomy4mfam83wxpp7shrk","field":"text","expr":"(+ n 1)"}
 {"id":"cab8jj5uq3n4x83sptekxchmnf","field":"point","expr":"(+ n 1)"}
+{"id":"kxzf315hhh8gcqux11uejmicok","field":"date_time","expr":"(+ n 1)"}
+{"id":"pfc6zduogry5jbse1t54ngpyen","field":"time_of_day","expr":"(+ n 1)"}
+{"id":"jjiqbwg5797zxu1bii61xz4iaw","field":"year","expr":"(/ n 2)"}
+{"id":"drhjo3m7suedue4nr5dq96fk35","field":"year_month","expr":"(+ n 1)"}
+{"id":"fi5s8zzakoa8a1rse6bntd9hth","field":"duration","expr":"(+ n 1)"}
+{"id":"jx9wqgd3rx6rp6tkdcjygmw5p6","field":"list","expr":"(+ n 1)"}
+{"id":"i59ttntgcgfwn5ocd3eocm8kcq","field":"object","expr":"(+ n 1)"}
+{"id":"f6w84i7mqetst5a4s3ck4a48fq","field":"shape","expr":"(+ n 1)"}
+{"id":"sbsh3j3wkpe3haesneno3tedj9","field":"anything","expr":"(/ n 0)"}
