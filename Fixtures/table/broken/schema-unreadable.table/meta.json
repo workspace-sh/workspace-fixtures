@@ -1,0 +1,8 @@
+{
+  "format": "table",
+  "formatVersion": 3,
+  "title": "Schema unreadable",
+  "tables": [
+    "items"
+  ]
+}

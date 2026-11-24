@@ -10,7 +10,16 @@
       "whole",
       "yes_no",
       "text",
-      "point"
+      "point",
+      "date_time",
+      "time_of_day",
+      "year",
+      "year_month",
+      "duration",
+      "list",
+      "object",
+      "shape",
+      "anything"
     ],
     "columnWidths": {
       "problem": 230,
@@ -19,7 +28,16 @@
       "whole": 190,
       "yes_no": 170,
       "text": 150,
-      "point": 170
+      "point": 170,
+      "date_time": 190,
+      "time_of_day": 190,
+      "year": 190,
+      "year_month": 190,
+      "duration": 190,
+      "list": 190,
+      "object": 190,
+      "shape": 190,
+      "anything": 190
     }
   },
   {

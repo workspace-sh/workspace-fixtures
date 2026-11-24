@@ -39,6 +39,51 @@
       "id": "qbfq7xngcxpwf",
       "name": "point",
       "type": "geopoint"
+    },
+    {
+      "id": "tkjibqapkj37n",
+      "name": "date_time",
+      "type": "datetime"
+    },
+    {
+      "id": "oc6yet54h6zcd",
+      "name": "time_of_day",
+      "type": "time"
+    },
+    {
+      "id": "yoznc7iuobk37",
+      "name": "year",
+      "type": "year"
+    },
+    {
+      "id": "tkx1qpfe9ghx4",
+      "name": "year_month",
+      "type": "yearmonth"
+    },
+    {
+      "id": "a9jjeqhgiosjw",
+      "name": "duration",
+      "type": "duration"
+    },
+    {
+      "id": "6tqeruzw75xte",
+      "name": "list",
+      "type": "array"
+    },
+    {
+      "id": "otwf88mwb6yxh",
+      "name": "object",
+      "type": "object"
+    },
+    {
+      "id": "8cfcrd7qatbpu",
+      "name": "shape",
+      "type": "geojson"
+    },
+    {
+      "id": "onik839tsdf8c",
+      "name": "anything",
+      "type": "any"
     }
   ]
 }

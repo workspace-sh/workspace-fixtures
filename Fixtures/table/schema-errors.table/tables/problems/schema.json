@@ -1,0 +1,157 @@
+{
+  "fields": [
+    {
+      "id": "3m9azxjdzdi4s",
+      "name": "problem",
+      "type": "string",
+      "title": "Problem"
+    },
+    {
+      "id": "3d3b46jejfqa5",
+      "name": "rule",
+      "type": "string",
+      "title": "Rule",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "id": "fsk5k76m6e4qj",
+      "name": "amount",
+      "type": "number",
+      "constraints": {
+        "minimum": 0,
+        "maximum": 100
+      }
+    },
+    {
+      "id": "rr9k34mb5ctaa",
+      "name": "rate",
+      "type": "number",
+      "constraints": {
+        "exclusiveMinimum": 0,
+        "exclusiveMaximum": 1
+      }
+    },
+    {
+      "id": "tyzhbkzf6oytp",
+      "name": "whole",
+      "type": "integer"
+    },
+    {
+      "id": "pssn6y6kk7d88",
+      "name": "month",
+      "type": "yearmonth"
+    },
+    {
+      "id": "965owefa7nerf",
+      "name": "due",
+      "type": "date",
+      "constraints": {
+        "minimum": "2026-01-01"
+      }
+    },
+    {
+      "id": "z6yyjjfte4wa5",
+      "name": "status",
+      "type": "string",
+      "categories": [
+        {
+          "value": "planning",
+          "color": "gray"
+        },
+        {
+          "value": "active",
+          "color": "green"
+        },
+        {
+          "value": "done",
+          "color": "blue"
+        },
+        {
+          "value": "archived",
+          "color": "brown"
+        }
+      ]
+    },
+    {
+      "id": "jahph4k331fsp",
+      "name": "tags",
+      "type": "array",
+      "categories": [
+        "red",
+        "green"
+      ]
+    },
+    {
+      "id": "1313j31doghnq",
+      "name": "code",
+      "type": "string",
+      "constraints": {
+        "minLength": 3,
+        "maxLength": 6,
+        "pattern": "^[A-Z]+$"
+      }
+    },
+    {
+      "id": "gqj7ykmdy56w4",
+      "name": "email",
+      "type": "string",
+      "format": "email",
+      "constraints": {
+        "unique": true
+      }
+    },
+    {
+      "id": "9bm8qmxjp1uau",
+      "name": "sku",
+      "type": "string"
+    },
+    {
+      "id": "ra8e6k5k43x4o",
+      "name": "region",
+      "type": "string"
+    },
+    {
+      "id": "aa3bwh89tamha",
+      "name": "person",
+      "type": "string"
+    },
+    {
+      "id": "49rhiytkwgwbu",
+      "name": "week",
+      "type": "integer"
+    },
+    {
+      "id": "ksoqeymbe9b79",
+      "name": "owner",
+      "type": "string",
+      "relation": {
+        "table": "people",
+        "field": "id"
+      }
+    },
+    {
+      "id": "95aqwb56ghkf1",
+      "name": "file",
+      "type": "string",
+      "attachment": true
+    },
+    {
+      "id": "fsk5k76m6e4qj",
+      "name": "again",
+      "type": "number",
+      "description": "Has the same id as amount (section 9, rule 6)."
+    }
+  ],
+  "primaryKey": [
+    "sku",
+    "region"
+  ],
+  "uniqueKeys": [
+    [
+      "person",
+      "week"
+    ]
+  ]
+}

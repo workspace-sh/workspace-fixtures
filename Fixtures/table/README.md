@@ -4,16 +4,17 @@ The `.table` fixtures: the example tables every app and test opens, and large ta
 
 ## The example files
 
-`calendars.table`, `crm.table`, `formula-errors.table`, `household-budget.table`, `library.table`, `projects.table` and `shop.table` are what table-file-format's tests read and what the web, Mac, iOS, Android and Linux demo apps open at launch. They're edited here, in a table-file-format checkout's `workspace-fixtures/` submodule, and committed to this repository first. table-file-format then moves its submodule to that commit.
+`calendars.table`, `crm.table`, `formula-errors.table`, `household-budget.table`, `library.table`, `projects.table`, `schema-errors.table` and `shop.table` are what table-file-format's tests read and what the web, Mac, iOS, Android and Linux demo apps open at launch. They're edited here, in a table-file-format checkout's `workspace-fixtures/` submodule, and committed to this repository first. table-file-format then moves its submodule to that commit.
 
 | File | Tables | What it exercises |
 |---|---|---|
 | `calendars.table` | events, milestones | every case a calendar draws: times, overlaps, spans across weeks, months and years, busy days, undated rows, reversed ends, offsets, leap and daylight-saving days, long and right-to-left titles |
 | `crm.table` | companies, contacts, deals | links between tables, logos as attachments, a board, a gallery, a calendar, totals |
-| `formula-errors.table` | errors | every error a formula can give, a row each, shown in plain words with its mark (table-file-format D61) |
+| `formula-errors.table` | errors | every error a formula can give, a row each, shown in plain words with its mark (table-file-format D61), and a formula's result that doesn't fit its column, in a column of every field type |
 | `household-budget.table` | budget, ledger | a sheet view (lettered columns, numbered rows), formulas, currency, totals |
 | `library.table` | books | a long table (1,000 rows, nine fields) to scroll past a screen or two: a long table's layout and its header while scrolling; views All books, By genre (a board), To read (filtered), Recently added |
 | `projects.table` | projects, tasks | row pages (`bodies/`), a choice list, grouping, every layout |
+| `schema-errors.table` | problems, people | a table that breaks its schema and still opens: one row for each way it can (table-file-format SPEC section 9), each saying what is wrong in its Problem column, and the reader's diagnostics (lines it can't read, a merge conflict, `cells/` lines it keeps, a malformed `meta.json`, a folder that isn't a table) and the optional warnings |
 | `shop.table` | orders, customers, products, lines | four linked tables, formulas across tables, grouping, totals |
 
 **After editing an example**, write its single file and `CHECKSUMS` again from a table-file-format checkout:
@@ -68,9 +69,15 @@ SHA-256, to tell whether a copy is the one that was measured:
 
 How to measure with them is in table-file-format's `docs/BENCHMARKING.md`.
 
-## Not a table (`broken/`)
+## Files that don't open (`broken/`)
 
 `broken/not-a-table.table` is a plain text file with a `.table` name, for what
 an app says when a file it's given isn't a `.table` (`markdown/Table Embeds.md`
-embeds it). It's in a folder of its own so that nothing reading the examples
-above mistakes it for one.
+embeds it).
+
+`broken/schema-unreadable.table` is a table whose `schema.json` isn't JSON: the
+one case the format makes fatal (table-file-format SPEC section 3, "Reader error
+contract"), for what an app shows when there is no table to browse.
+
+They're in a folder of their own so that nothing reading the examples above
+mistakes them for examples.
