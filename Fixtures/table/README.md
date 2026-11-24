@@ -56,13 +56,13 @@ node --max-old-space-size=4096 --conditions=source --import tsx scripts/big-tabl
 
 Each writes `<out-dir>/big-<rows>.table/` and `<out-dir>/single-file/big-<rows>.table`. Other sizes are made the same way. If the generator changes, make these again and update the checksums.
 
-SHA-256, to tell whether a copy is the one that was measured:
+SHA-256, to tell whether a copy is this one. Since 24 Nov 2026 the amount and weighted columns are shown as `currency:USD` (before, `currency`, a token the display vocabulary doesn't have); the rows are byte for byte the ones that were measured.
 
 | File | SHA-256 |
 |---|---|
-| `big-10000.table` | `7043fe769e0aaf56c7b6835f04bd9cc4c538fc8e71a602e8fdb1f3916e8269fd` |
-| `big-50000.table` | `acafbb11d5e14c621ad3ad5f3c5a57b68daf5b270e12b7dfc5eea5443f7a5c8e` |
-| `big-1000000.table` | `d51b9a47e8e8fa49a1b90d8a92738a5b5288fb1a055cabb1b7cccf51ada70d66` |
+| `big-10000.table` | `270a131a71f8aa61607c8efd439b0ea425ed8219c9eeb846895f98525cd18e76` |
+| `big-50000.table` | `f42677f5633ca74e179ec7852f5eb21a342a5d5ef1647bd5399bff2f3da0990d` |
+| `big-1000000.table` | `881bc1835288ca13ff0704f1d57ec7681c94015fe4974ee26395752bbc64ad24` |
 | `big-10000.table`'s rows files inside it, joined in name order | `49680d45d50bc40e741b63c218e287930ba5bbbb5c8613ecb17a2256a7ea7397` |
 | `big-50000.table`'s rows files inside it, joined in name order | `15072bc9d7bdd2fe4bf6e667f249611e908298b50466cdde21d62cbf2463d223` |
 | `big-1000000.table`'s rows files inside it, joined in name order | `fbf24e25e75967c1d892fe7ea58c0dea58f45c1bbcb2bedbdb8beecc1c01434d` |
