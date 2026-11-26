@@ -494,6 +494,8 @@ White on transparent.
 
 All {len(files)} Meteocons weather icons in the {style} style, animated with SMIL. A stress test: only what is on screen should be drawing. The still ones are at the end: flags, units and the like, which Meteocons draws still (its "not available" icon, a crossed-out N/A, among them).
 
+Many of the animated ones move only a little, as Meteocons drew them: a thermometer's mercury rises by 2 units of its 128 over 3 seconds, a barometer's needle nudges, a cloud's arrows drift. Watch closely before taking one for still.
+
 {sections([(p.name, name(p), p) for p in files], 64, 5)}
 
 {credits("meteocons")}"""
