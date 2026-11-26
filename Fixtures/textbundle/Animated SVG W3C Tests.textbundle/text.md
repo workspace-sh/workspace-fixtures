@@ -106,8 +106,6 @@ The 74 animation tests from the W3C SVG 1.1 Second Edition test suite that use n
 
 ### animate-elem-21-t
 
-*Chains animations or waits for an event: not played yet on iOS.*
-
 <p>
 <img src="assets/animate-elem-21-t.svg" width="320" alt="animate-elem-21-t" title="animate-elem-21-t">
 </p>
@@ -216,8 +214,6 @@ The 74 animation tests from the W3C SVG 1.1 Second Edition test suite that use n
 
 ### animate-elem-39-t
 
-*Chains animations or waits for an event: not played yet on iOS.*
-
 <p>
 <img src="assets/animate-elem-39-t.svg" width="320" alt="animate-elem-39-t" title="animate-elem-39-t">
 </p>
@@ -248,7 +244,7 @@ The 74 animation tests from the W3C SVG 1.1 Second Edition test suite that use n
 
 ### animate-elem-52-t
 
-*Chains animations or waits for an event: not played yet on iOS.*
+*Waits for a tap, a hover or focus: an image in a page never gets one, so part of it stays still.*
 
 <p>
 <img src="assets/animate-elem-52-t.svg" width="320" alt="animate-elem-52-t" title="animate-elem-52-t">
@@ -262,7 +258,7 @@ The 74 animation tests from the W3C SVG 1.1 Second Edition test suite that use n
 
 ### animate-elem-60-t
 
-*Chains animations or waits for an event: not played yet on iOS.*
+*Waits for a tap, a hover or focus: an image in a page never gets one, so part of it stays still.*
 
 <p>
 <img src="assets/animate-elem-60-t.svg" width="320" alt="animate-elem-60-t" title="animate-elem-60-t">
@@ -270,7 +266,7 @@ The 74 animation tests from the W3C SVG 1.1 Second Edition test suite that use n
 
 ### animate-elem-61-t
 
-*Chains animations or waits for an event: not played yet on iOS.*
+*Waits for a tap, a hover or focus: an image in a page never gets one, so part of it stays still.*
 
 <p>
 <img src="assets/animate-elem-61-t.svg" width="320" alt="animate-elem-61-t" title="animate-elem-61-t">
@@ -278,7 +274,7 @@ The 74 animation tests from the W3C SVG 1.1 Second Edition test suite that use n
 
 ### animate-elem-62-t
 
-*Chains animations or waits for an event: not played yet on iOS.*
+*Waits for a tap, a hover or focus: an image in a page never gets one, so part of it stays still.*
 
 <p>
 <img src="assets/animate-elem-62-t.svg" width="320" alt="animate-elem-62-t" title="animate-elem-62-t">
@@ -328,23 +324,17 @@ The 74 animation tests from the W3C SVG 1.1 Second Edition test suite that use n
 
 ### animate-elem-70-t
 
-*Chains animations or waits for an event: not played yet on iOS.*
-
 <p>
 <img src="assets/animate-elem-70-t.svg" width="320" alt="animate-elem-70-t" title="animate-elem-70-t">
 </p>
 
 ### animate-elem-77-t
 
-*Chains animations or waits for an event: not played yet on iOS.*
-
 <p>
 <img src="assets/animate-elem-77-t.svg" width="320" alt="animate-elem-77-t" title="animate-elem-77-t">
 </p>
 
 ### animate-elem-78-t
-
-*Chains animations or waits for an event: not played yet on iOS.*
 
 <p>
 <img src="assets/animate-elem-78-t.svg" width="320" alt="animate-elem-78-t" title="animate-elem-78-t">
@@ -430,7 +420,7 @@ The 74 animation tests from the W3C SVG 1.1 Second Edition test suite that use n
 
 ### animate-interact-events-01-t
 
-*Chains animations or waits for an event: not played yet on iOS.*
+*Waits for a tap, a hover or focus: an image in a page never gets one, so part of it stays still.*
 
 <p>
 <img src="assets/animate-interact-events-01-t.svg" width="320" alt="animate-interact-events-01-t" title="animate-interact-events-01-t">
@@ -438,7 +428,7 @@ The 74 animation tests from the W3C SVG 1.1 Second Edition test suite that use n
 
 ### animate-interact-pevents-01-t
 
-*Chains animations or waits for an event: not played yet on iOS.*
+*Waits for a tap, a hover or focus: an image in a page never gets one, so part of it stays still.*
 
 <p>
 <img src="assets/animate-interact-pevents-01-t.svg" width="320" alt="animate-interact-pevents-01-t" title="animate-interact-pevents-01-t">
@@ -446,7 +436,7 @@ The 74 animation tests from the W3C SVG 1.1 Second Edition test suite that use n
 
 ### animate-interact-pevents-02-t
 
-*Chains animations or waits for an event: not played yet on iOS.*
+*Waits for a tap, a hover or focus: an image in a page never gets one, so part of it stays still.*
 
 <p>
 <img src="assets/animate-interact-pevents-02-t.svg" width="320" alt="animate-interact-pevents-02-t" title="animate-interact-pevents-02-t">
@@ -454,7 +444,7 @@ The 74 animation tests from the W3C SVG 1.1 Second Edition test suite that use n
 
 ### animate-interact-pevents-03-t
 
-*Chains animations or waits for an event: not played yet on iOS.*
+*Waits for a tap, a hover or focus: an image in a page never gets one, so part of it stays still.*
 
 <p>
 <img src="assets/animate-interact-pevents-03-t.svg" width="320" alt="animate-interact-pevents-03-t" title="animate-interact-pevents-03-t">
@@ -462,7 +452,7 @@ The 74 animation tests from the W3C SVG 1.1 Second Edition test suite that use n
 
 ### animate-interact-pevents-04-t
 
-*Chains animations or waits for an event: not played yet on iOS.*
+*Waits for a tap, a hover or focus: an image in a page never gets one, so part of it stays still.*
 
 <p>
 <img src="assets/animate-interact-pevents-04-t.svg" width="320" alt="animate-interact-pevents-04-t" title="animate-interact-pevents-04-t">
