@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="240" height="120" viewBox="0 0 240 120">
+<rect width="240" height="120" rx="10" fill="#1f2433"/>
+<rect y="92" width="240" height="28" rx="0" fill="#2b3245"/>
+<text x="10" y="104" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#e8ecf4">SMIL: additive=sum, accumulate=sum</text>
+<text x="10" y="115" font-family="system-ui, -apple-system, sans-serif" font-size="8.5" fill="#9aa6bd">Moves right in 4 hops of 40, each starting where the last ended.</text>
+<rect x="20" y="34" width="24" height="24" fill="#c792ea"><animate attributeName="x" by="40" dur="0.75s" additive="sum" accumulate="sum" repeatCount="4" fill="freeze"/></rect>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="240" height="120" viewBox="0 0 240 120">
+<rect width="240" height="120" rx="10" fill="#1f2433"/>
+<rect y="92" width="240" height="28" rx="0" fill="#2b3245"/>
+<text x="10" y="104" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#e8ecf4">SMIL: calcMode=spline, keySplines</text>
+<text x="10" y="115" font-family="system-ui, -apple-system, sans-serif" font-size="8.5" fill="#9aa6bd">The ball drops and bounces with easing, not at a constant speed.</text>
+<circle cx="120" cy="16" r="10" fill="#89ddff"><animate attributeName="cy" values="16;78;16" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.5 0 1 1;0 0 0.5 1" dur="1.2s" repeatCount="indefinite"/></circle>
+</svg>

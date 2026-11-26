@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="240" height="120" viewBox="0 0 240 120">
+<style>.draw{animation:draw 2.5s ease-in-out infinite}@keyframes draw{to{stroke-dashoffset:0}}</style><rect width="240" height="120" rx="10" fill="#1f2433"/>
+<rect y="92" width="240" height="28" rx="0" fill="#2b3245"/>
+<text x="10" y="104" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#e8ecf4">CSS: stroke-dashoffset (a line drawing itself)</text>
+<text x="10" y="115" font-family="system-ui, -apple-system, sans-serif" font-size="8.5" fill="#9aa6bd">The wave draws from left to right, then starts again.</text>
+<path class="draw" d="M20 60 Q50 10 80 50 T140 50 T200 40 T220 50" fill="none" stroke="#c3e88d" stroke-width="4" stroke-linecap="round" stroke-dasharray="300" stroke-dashoffset="300"/>
+</svg>

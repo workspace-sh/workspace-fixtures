@@ -8,10 +8,15 @@ instead of each checkout inventing its own.
 (the `.table` examples, the element sweep's Markdown, the portraits) or written
 for a test. Each is ours to offer, and the folder's README says how it was made.
 
-Nothing else belongs here: no third-party files, even under an open licence,
-and nothing private. A file whose source and licence can't be confirmed is
-removed. Because of that rule, any of it can be bundled into an app build or a
-test. Useful material elsewhere is linked below instead.
+Nothing else belongs here, with one exception: test material that is only
+useful because someone else wrote it, under a permissive licence (MIT, BSD,
+Apache 2.0, CC0 or CC BY) that allows redistribution, kept unedited with its
+licence beside it and its source recorded in the folder's README. Today that is
+[`Images/Animated SVG/`](Images/Animated%20SVG/). Nothing under a copyleft
+licence, and nothing private. A file whose source and licence can't be
+confirmed is removed. Because of that rule, any of it can be bundled into an
+app build or a test, as long as its licence travels with it. Other useful
+material is linked below instead.
 
 ## Layout
 
