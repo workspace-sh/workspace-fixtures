@@ -7,10 +7,15 @@ Unlike the rest of this repository, most of these files were not made for it. Th
 | Folder | Files | Source | Licence |
 |---|---|---|---|
 | `Feature tests/` | 19 | Written for this repository by the script: one animation feature each, labelled with what should be seen. Three test what must **not** happen: a tap starting an animation, `:hover`, and `<script>`. | Same as this repository |
+| `Complex/` | 3 | Written for this repository by the script: an orrery (nested orbits, a moon, a breathing halo, twinkling stars), an equaliser (18 bars on eased splines and a morphing waveform) and an assembly (an outline drawing itself, a fill, a tick and a caption in sequence). Supported features only, so all three should move throughout. | Same as this repository |
 | `SVG Spinners/SMIL/`, `SVG Spinners/CSS/` | 46 + 46 | [n3r4zzurr0/svg-spinners](https://github.com/n3r4zzurr0/svg-spinners) at `abfa05c` (6 Mar 2023): the same spinners animated with SMIL and with CSS | MIT, `SVG Spinners/LICENSE` |
 | `SVG Loaders/` | 12 | [SamHerbert/SVG-Loaders](https://github.com/SamHerbert/SVG-Loaders) at `561eaca` (2 Jan 2025): white on transparent | MIT, `SVG Loaders/LICENSE.md` |
 | `Meteocons/fill`, `line`, `flat`, `monochrome` | 475 each | [Meteocons](https://github.com/basmilius/weather-icons), the npm package `@meteocons/svg` 0.1.0 (the repository builds them; the package is what it publishes) | MIT, `Meteocons/LICENSE` (from the repository at `70dfb1d`) |
 | `W3C SVG 1.1/` | 74 | The `animate-*` tests of the [W3C SVG 1.1 Second Edition test suite](https://www.w3.org/Graphics/SVG/Test/20110816/) (archive of 16 Aug 2011) that use no `<script>`; the four that do were left out | [W3C 3-clause BSD](https://www.w3.org/Consortium/Legal/2008/03-bsd-license), `W3C SVG 1.1/LICENSE.txt`. W3C offers its test suites under it for software development and testing; each file keeps its copyright notice |
+
+## Still, and not yet
+
+The bundles sort every set into three groups, and say which: **Animated**; **Not animated yet**, files that start one animation from another's beginning or end (`begin="a.end"`) or from a tap or hover, which the iOS player doesn't do yet, so some or all of each stays still; and **Still by design**, files with nothing in them to animate (Meteocons' flags, units and its crossed-out "not available" icon, N/A). The script decides from the file's text; the parser's own count below agrees with it except for a few W3C tests and one spinner that is only partly chained.
 
 ## What the current parser makes of them
 

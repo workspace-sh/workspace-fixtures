@@ -120,6 +120,28 @@ Each names the feature it uses and what should be seen. A still frame is a failu
 <img src="assets/tests/smil-transform.svg" width="240" alt="smil-transform" title="smil-transform">
 </p>
 
+## Complex
+
+Scenes with many parts moving at once, as a README's banner or diagram asks of a renderer. All three should move throughout.
+
+### Orrery
+
+<p>
+<img src="assets/complex/1-orrery.svg" width="480" alt="orrery" title="orrery">
+</p>
+
+### Equaliser
+
+<p>
+<img src="assets/complex/2-equaliser.svg" width="480" alt="equaliser" title="equaliser">
+</p>
+
+### Assembly
+
+<p>
+<img src="assets/complex/3-assembly.svg" width="480" alt="assembly" title="assembly">
+</p>
+
 ## Credits
 
 - [Meteocons](https://github.com/basmilius/weather-icons) by Bas Milius, MIT (`assets/licences/Meteocons.txt`)

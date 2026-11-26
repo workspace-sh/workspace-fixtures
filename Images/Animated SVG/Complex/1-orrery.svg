@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="270" viewBox="0 0 480 270">
+<style>.tw{animation:tw 2.8s ease-in-out infinite}@keyframes tw{50%{opacity:.15}}
+.halo{transform-origin:240px 135px;animation:halo 3s ease-in-out infinite}@keyframes halo{50%{transform:scale(1.25);opacity:.35}}</style>
+<defs><radialGradient id="sun"><stop offset="0" stop-color="#fff3b0"/><stop offset=".55" stop-color="#ffb547"/><stop offset="1" stop-color="#ff7a1a"/></radialGradient>
+<radialGradient id="glow"><stop offset="0" stop-color="#ffb547" stop-opacity=".55"/><stop offset="1" stop-color="#ffb547" stop-opacity="0"/></radialGradient></defs>
+<rect width="480" height="270" rx="14" fill="#0b1020"/><circle cx="30" cy="30" r="1.2" fill="#fff" class="tw" style="animation-delay:0s"/><circle cx="90" cy="220" r="1" fill="#fff" class="tw" style="animation-delay:0.7s"/><circle cx="420" cy="40" r="1.4" fill="#fff" class="tw" style="animation-delay:1.3s"/><circle cx="450" cy="210" r="1" fill="#fff" class="tw" style="animation-delay:0.4s"/><circle cx="250" cy="20" r="1" fill="#fff" class="tw" style="animation-delay:1.9s"/><circle cx="60" cy="140" r="0.9" fill="#fff" class="tw" style="animation-delay:1.1s"/><circle cx="400" cy="250" r="1.2" fill="#fff" class="tw" style="animation-delay:2.2s"/><circle cx="330" cy="120" r="0.8" fill="#fff" class="tw" style="animation-delay:0.2s"/><circle cx="150" cy="60" r="1" fill="#fff" class="tw" style="animation-delay:1.6s"/><circle cx="200" cy="250" r="0.9" fill="#fff" class="tw" style="animation-delay:2.6s"/>
+<g fill="none" stroke="#2a3350" stroke-width="1"><circle cx="240" cy="135" r="48"/><circle cx="240" cy="135" r="78"/><circle cx="240" cy="135" r="112"/></g>
+<circle class="halo" cx="240" cy="135" r="40" fill="url(#glow)"/>
+<circle cx="240" cy="135" r="22" fill="url(#sun)"/>
+<g><animateTransform attributeName="transform" type="rotate" from="0 240 135" to="360 240 135" dur="3s" repeatCount="indefinite"/><circle cx="288" cy="135" r="5" fill="#9aa6bd"/></g>
+<g><animateTransform attributeName="transform" type="rotate" from="120 240 135" to="480 240 135" dur="6s" repeatCount="indefinite"/><circle cx="318" cy="135" r="8" fill="#4fa3ff"/><g><animateTransform attributeName="transform" type="rotate" from="0 318 135" to="360 318 135" dur="1.2s" repeatCount="indefinite"/><circle cx="333" cy="135" r="2.6" fill="#e8ecf4"/></g></g>
+<g><animateTransform attributeName="transform" type="rotate" from="250 240 135" to="610 240 135" dur="11s" repeatCount="indefinite"/><circle cx="352" cy="135" r="11" fill="#e0a35a"/><ellipse cx="352" cy="135" rx="19" ry="5" fill="none" stroke="#f0cf9a" stroke-width="1.6"/></g>
+<text x="16" y="256" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9aa6bd">Orrery: three orbits, a moon, a breathing halo, twinkling stars</text>
+</svg>
