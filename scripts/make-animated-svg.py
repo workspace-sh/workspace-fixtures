@@ -15,12 +15,14 @@ animates SVG has to do it there, and a markdown image is the plainer case.
 
 import html
 import json
+import re
 import shutil
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "Images" / "Animated SVG"
 TESTS = SRC / "Feature tests"
+COMPLEX_DIR = SRC / "Complex"
 OUT = ROOT / "Fixtures" / "textbundle"
 
 # ---------- Feature tests (ours) ----------
@@ -181,6 +183,134 @@ FEATURES = {
     ),
 }
 
+# ---------- Complex examples (ours) ----------
+#
+# Scenes of many moving parts at once, at the end of the showcase: what a
+# README's banner or diagram asks of a renderer.
+
+
+def orrery() -> str:
+    stars = "".join(
+        f'<circle cx="{x}" cy="{y}" r="{r}" fill="#fff" class="tw" style="animation-delay:{d}s"/>'
+        for x, y, r, d in [(30, 30, 1.2, 0), (90, 220, 1, .7), (420, 40, 1.4, 1.3), (450, 210, 1, .4),
+                           (250, 20, 1, 1.9), (60, 140, .9, 1.1), (400, 250, 1.2, 2.2), (330, 120, .8, .2),
+                           (150, 60, 1, 1.6), (200, 250, .9, 2.6)]
+    )
+    planet = lambda r, size, colour, dur, start: (
+        f'<g><animateTransform attributeName="transform" type="rotate" from="{start} 240 135" '
+        f'to="{start + 360} 240 135" dur="{dur}s" repeatCount="indefinite"/>'
+        f'<circle cx="{240 + r}" cy="135" r="{size}" fill="{colour}"/>'
+    )
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="480" height="270" viewBox="0 0 480 270">
+<style>.tw{{animation:tw 2.8s ease-in-out infinite}}@keyframes tw{{50%{{opacity:.15}}}}
+.halo{{transform-origin:240px 135px;animation:halo 3s ease-in-out infinite}}@keyframes halo{{50%{{transform:scale(1.25);opacity:.35}}}}</style>
+<defs><radialGradient id="sun"><stop offset="0" stop-color="#fff3b0"/><stop offset=".55" stop-color="#ffb547"/><stop offset="1" stop-color="#ff7a1a"/></radialGradient>
+<radialGradient id="glow"><stop offset="0" stop-color="#ffb547" stop-opacity=".55"/><stop offset="1" stop-color="#ffb547" stop-opacity="0"/></radialGradient></defs>
+<rect width="480" height="270" rx="14" fill="#0b1020"/>{stars}
+<g fill="none" stroke="#2a3350" stroke-width="1"><circle cx="240" cy="135" r="48"/><circle cx="240" cy="135" r="78"/><circle cx="240" cy="135" r="112"/></g>
+<circle class="halo" cx="240" cy="135" r="40" fill="url(#glow)"/>
+<circle cx="240" cy="135" r="22" fill="url(#sun)"/>
+{planet(48, 5, "#9aa6bd", 3, 0)}</g>
+{planet(78, 8, "#4fa3ff", 6, 120)}<g><animateTransform attributeName="transform" type="rotate" from="0 {240 + 78} 135" to="360 {240 + 78} 135" dur="1.2s" repeatCount="indefinite"/><circle cx="{240 + 78 + 15}" cy="135" r="2.6" fill="#e8ecf4"/></g></g>
+{planet(112, 11, "#e0a35a", 11, 250)}<ellipse cx="{240 + 112}" cy="135" rx="19" ry="5" fill="none" stroke="#f0cf9a" stroke-width="1.6"/></g>
+<text x="16" y="256" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9aa6bd">Orrery: three orbits, a moon, a breathing halo, twinkling stars</text>
+</svg>
+"""
+
+
+def equaliser() -> str:
+    bars = []
+    for i in range(18):
+        x = 40 + i * 22
+        dur = 0.6 + (i * 37 % 11) / 10
+        lo, hi = 20 + (i * 13 % 30), 110 + (i * 29 % 60)
+        vals = f"{lo};{hi};{(lo + hi) // 2};{hi - 10};{lo}"
+        ys = ";".join(str(200 - int(v)) for v in vals.split(";"))
+        bars.append(
+            f'<rect x="{x}" y="{200 - lo}" width="14" height="{lo}" rx="3" fill="url(#bar)">'
+            f'<animate attributeName="height" values="{vals}" dur="{dur:.1f}s" repeatCount="indefinite" '
+            f'calcMode="spline" keyTimes="0;.25;.5;.75;1" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>'
+            f'<animate attributeName="y" values="{ys}" dur="{dur:.1f}s" repeatCount="indefinite" '
+            f'calcMode="spline" keyTimes="0;.25;.5;.75;1" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/></rect>'
+        )
+    wave = lambda a: f"M30 230 C110 {230 - a} 170 {230 + a} 240 230 S370 {230 - a} 450 230"
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="480" height="270" viewBox="0 0 480 270">
+<style>.dot{{animation:blink 1s steps(2) infinite}}@keyframes blink{{50%{{opacity:0}}}}</style>
+<defs><linearGradient id="bar" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#7c5cff"/><stop offset=".6" stop-color="#4fa3ff"/><stop offset="1" stop-color="#3ee6c4"/></linearGradient></defs>
+<rect width="480" height="270" rx="14" fill="#101521"/>
+<line x1="30" y1="200" x2="450" y2="200" stroke="#2a3350"/>
+{"".join(bars)}
+<path d="{wave(18)}" fill="none" stroke="#ff6b9a" stroke-width="2.5" stroke-linecap="round">
+<animate attributeName="d" values="{wave(18)};{wave(-18)};{wave(18)}" dur="2.4s" repeatCount="indefinite"/></path>
+<circle class="dot" cx="438" cy="28" r="5" fill="#ff4d4d"/><text x="404" y="32" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#ff4d4d">REC</text>
+<text x="16" y="256" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9aa6bd">Equaliser: 18 bars on eased splines, a morphing waveform, a blinking light</text>
+</svg>
+"""
+
+
+def assembly() -> str:
+    return """<svg xmlns="http://www.w3.org/2000/svg" width="480" height="270" viewBox="0 0 480 270">
+<style>
+.draw{stroke-dasharray:420;stroke-dashoffset:420;animation:draw 6s ease-in-out infinite}
+@keyframes draw{0%{stroke-dashoffset:420}35%,85%{stroke-dashoffset:0}100%{stroke-dashoffset:-420}}
+.fill{opacity:0;animation:fill 6s ease-in-out infinite}
+@keyframes fill{0%,30%{opacity:0}45%,80%{opacity:1}95%,100%{opacity:0}}
+.ring{transform-origin:240px 120px;animation:ring 6s linear infinite}
+@keyframes ring{to{transform:rotate(360deg)}}
+.tag{opacity:0;animation:tag 6s ease-out infinite}
+@keyframes tag{0%,45%{opacity:0;transform:translateY(8px)}55%,85%{opacity:1;transform:translateY(0)}100%{opacity:0}}
+</style>
+<defs><linearGradient id="hex" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c5cff"/><stop offset="1" stop-color="#3ee6c4"/></linearGradient></defs>
+<rect width="480" height="270" rx="14" fill="#0e1220"/>
+<g class="ring" fill="none" stroke="#2a3350" stroke-width="2" stroke-dasharray="6 10"><circle cx="240" cy="120" r="86"/></g>
+<path class="fill" d="M240 52 L299 86 L299 154 L240 188 L181 154 L181 86 Z" fill="url(#hex)"/>
+<path class="draw" d="M240 52 L299 86 L299 154 L240 188 L181 154 L181 86 Z" fill="none" stroke="#e8ecf4" stroke-width="3" stroke-linejoin="round"/>
+<path d="M215 120 L234 139 L268 102" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="80" stroke-dashoffset="80">
+<animate attributeName="stroke-dashoffset" values="80;80;0;0;80" keyTimes="0;.42;.55;.85;1" dur="6s" repeatCount="indefinite"/></path>
+<g class="tag"><text x="240" y="226" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#e8ecf4">Build passing</text></g>
+<text x="16" y="256" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9aa6bd">Assembly: an outline draws, fills, a tick strokes in, the caption rises, then it all clears</text>
+</svg>
+"""
+
+
+COMPLEX = {"1-orrery": orrery, "2-equaliser": equaliser, "3-assembly": assembly}
+
+# ---------- Which files move ----------
+
+ANIMATES = re.compile(r"<(animate|animateTransform|animateMotion|set|animateColor)\b|@keyframes|animation\s*:", re.I)
+CHAINED = re.compile(r'begin\s*=\s*"[^"]*([A-Za-z_][\w-]*\.(begin|end)|click|mouse|focus|activate)', re.I)
+
+
+def motion(path: Path) -> str:
+    """'still' (drawn still by its author), 'chained' (starts one animation
+    from another's, or from an event, which the iOS player doesn't do yet:
+    some or all of it stays still), or 'animated'."""
+    text = path.read_text(errors="ignore")
+    if not ANIMATES.search(text):
+        return "still"
+    return "chained" if CHAINED.search(text) else "animated"
+
+
+STILL_NOTE = "Drawn still by their author: there is nothing in these files to animate, so they should not move."
+CHAINED_NOTE = ("These start one animation from another's beginning or end (`begin=\"a.end\"`), or from a tap or hover. "
+                "The iOS player doesn't do that yet, so some or all of each stays still. They should move once it does.")
+
+
+def sections(files: list[tuple[str, str, Path]], width: int, per_row: int) -> str:
+    """A grid of what animates, then what's chained, then what's still, each said."""
+    out = []
+    groups = {"animated": [], "chained": [], "still": []}
+    for src, alt, path in files:
+        groups[motion(path)].append((src, alt))
+    if groups["animated"]:
+        out.append(f"### Animated ({len(groups['animated'])})\n\n" + grid(groups["animated"], width, per_row))
+    if groups["chained"]:
+        out.append(f"### Not animated yet ({len(groups['chained'])})\n\n{CHAINED_NOTE}\n\n" + grid(groups["chained"], width, per_row))
+    if groups["still"]:
+        out.append(f"### Still by design ({len(groups['still'])})\n\n{STILL_NOTE}\n\n" + grid(groups["still"], width, per_row))
+    return "\n\n".join(out)
+
+
 # ---------- Bundles ----------
 
 INFO = {"version": 2, "type": "net.daringfireball.markdown", "transient": False}
@@ -249,6 +379,10 @@ def main() -> None:
     TESTS.mkdir(parents=True, exist_ok=True)
     for key, svg in FEATURES.items():
         (TESTS / f"{key}.svg").write_text(svg)
+    COMPLEX_DIR.mkdir(parents=True, exist_ok=True)
+    for key, make in COMPLEX.items():
+        (COMPLEX_DIR / f"{key}.svg").write_text(make())
+    complex_files = sorted(COMPLEX_DIR.glob("*.svg"))
 
     tests = sorted(TESTS.glob("*.svg"))
     smil = sorted((SPINNERS / "SMIL").glob("*.svg"))
@@ -274,7 +408,12 @@ def main() -> None:
         assets[f"loaders/{n}.svg"] = LOADERS / f"{n}.svg"
     for t in tests:
         assets[f"tests/{t.name}"] = t
+    for c in complex_files:
+        assets[f"complex/{c.name}"] = c
     assets.update(licence_assets("spinners", "loaders", "meteocons"))
+    complex_rows = "\n\n".join(
+        f"### {c.stem[2:].capitalize()}\n\n<p>\n{img(f'complex/{c.name}', c.stem[2:], 480)}\n</p>" for c in complex_files
+    )
     feature_rows = "\n\n".join(
         f"<p>\n{img(f'tests/{t.name}', t.stem, 240)}\n</p>" for t in tests
     )
@@ -304,6 +443,12 @@ Each names the feature it uses and what should be seen. A still frame is a failu
 
 {feature_rows}
 
+## Complex
+
+Scenes with many parts moving at once, as a README's banner or diagram asks of a renderer. All three should move throughout.
+
+{complex_rows}
+
 {credits("meteocons", "spinners", "loaders")}
 The feature tests were written for this repository.
 """
@@ -316,23 +461,23 @@ The feature tests were written for this repository.
     assets.update(licence_assets("spinners", "loaders"))
     text = f"""# Animated SVG Spinners
 
-{len(smil)} spinners animated with SMIL, the same {len(css)} animated with CSS, and {len(loaders)} loaders. Every one should move.
+{len(smil)} spinners animated with SMIL, the same {len(css)} animated with CSS, and {len(loaders)} loaders. Each set is split into what should move now, what doesn't yet and why, and what is still by design.
 
 ## SVG Spinners, SMIL
 
-{grid([(f"smil/{p.name}", name(p)) for p in smil], 48, 6)}
+{sections([(f"smil/{p.name}", name(p), p) for p in smil], 48, 6)}
 
 ## SVG Spinners, CSS
 
 The same shapes again, driven by `@keyframes` instead.
 
-{grid([(f"css/{p.name}", name(p)) for p in css], 48, 6)}
+{sections([(f"css/{p.name}", name(p), p) for p in css], 48, 6)}
 
 ## SVG Loaders
 
 White on transparent.
 
-{grid([(f"loaders/{p.name}", name(p)) for p in loaders], 56, 6)}
+{sections([(f"loaders/{p.name}", name(p), p) for p in loaders], 56, 6)}
 
 {credits("spinners", "loaders")}"""
     bundle("Animated SVG Spinners", text, assets)
@@ -345,9 +490,9 @@ White on transparent.
         assets.update(licence_assets("meteocons"))
         text = f"""# Animated SVG Weather, {style}
 
-All {len(files)} Meteocons weather icons in the {style} style. Every one is animated with SMIL. A stress test: only what is on screen should be drawing.
+All {len(files)} Meteocons weather icons in the {style} style, animated with SMIL. A stress test: only what is on screen should be drawing. The still ones are at the end: flags, units and the like, which Meteocons draws still (its "not available" icon, a crossed-out N/A, among them).
 
-{grid([(p.name, name(p)) for p in files], 64, 5)}
+{sections([(p.name, name(p), p) for p in files], 64, 5)}
 
 {credits("meteocons")}"""
         bundle(f"Animated SVG Weather {style.capitalize()}", text, assets)
@@ -355,7 +500,12 @@ All {len(files)} Meteocons weather icons in the {style} style. Every one is anim
     # 4. The W3C SVG 1.1 animation tests that use no script.
     assets = {p.name: p for p in w3c}
     assets.update(licence_assets("w3c"))
-    rows = "\n\n".join(f"### {p.stem}\n\n<p>\n{img(p.name, p.stem, 320)}\n</p>" for p in w3c)
+    said = {
+        "animated": "",
+        "chained": "*Chains animations or waits for an event: not played yet on iOS.*\n\n",
+        "still": "*No animation in the file.*\n\n",
+    }
+    rows = "\n\n".join(f"### {p.stem}\n\n{said[motion(p)]}<p>\n{img(p.name, p.stem, 320)}\n</p>" for p in w3c)
     text = f"""# Animated SVG W3C Tests
 
 The {len(w3c)} animation tests from the W3C SVG 1.1 Second Edition test suite that use no script (`animate-*`). Each was written for a browser: many say what a pass looks like in the image itself, often at a given second, and some rely on fonts or events a document view doesn't have. A coverage reference, not a pass list.
