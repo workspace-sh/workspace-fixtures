@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="240" height="120" viewBox="0 0 240 120">
+<style>.tint{animation:tint 3s linear infinite}@keyframes tint{33%{fill:#ffcb6b}66%{fill:#82aaff}}</style><rect width="240" height="120" rx="10" fill="#1f2433"/>
+<rect y="92" width="240" height="28" rx="0" fill="#2b3245"/>
+<text x="10" y="104" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#e8ecf4">CSS @keyframes: fill colour</text>
+<text x="10" y="115" font-family="system-ui, -apple-system, sans-serif" font-size="8.5" fill="#9aa6bd">The heart goes red, gold, blue and back every 3 s.</text>
+<path class="tint" d="M120 78 L94 52 A15 15 0 0 1 120 30 A15 15 0 0 1 146 52 Z" fill="#ff5370"/>
+</svg>

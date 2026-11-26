@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="240" height="120" viewBox="0 0 240 120">
+<rect width="240" height="120" rx="10" fill="#1f2433"/>
+<rect y="92" width="240" height="28" rx="0" fill="#2b3245"/>
+<text x="10" y="104" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#e8ecf4">SMIL &lt;animateMotion&gt;: along a path, rotate=auto</text>
+<text x="10" y="115" font-family="system-ui, -apple-system, sans-serif" font-size="8.5" fill="#9aa6bd">The arrow follows the loop and points the way it goes.</text>
+<path id="loop" d="M40 46 C40 0 200 0 200 46 C200 92 40 92 40 46 Z" fill="none" stroke="#3a4257" stroke-width="2"/><path d="M-9 -6 L9 0 L-9 6 Z" fill="#f78c6c"><animateMotion dur="4s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#loop"/></animateMotion></path>
+</svg>

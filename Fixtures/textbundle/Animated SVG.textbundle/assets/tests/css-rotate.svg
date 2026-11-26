@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="240" height="120" viewBox="0 0 240 120">
+<style>.spin{transform-origin:120px 47px;animation:spin 2s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}</style><rect width="240" height="120" rx="10" fill="#1f2433"/>
+<rect y="92" width="240" height="28" rx="0" fill="#2b3245"/>
+<text x="10" y="104" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#e8ecf4">CSS @keyframes: transform rotate</text>
+<text x="10" y="115" font-family="system-ui, -apple-system, sans-serif" font-size="8.5" fill="#9aa6bd">The bar turns once every 2 s.</text>
+<rect class="spin" x="70" y="42" width="100" height="10" rx="5" fill="#6ea8fe"/>
+</svg>

@@ -24,3 +24,7 @@ Photographs, and one pencil map, made for the TextBundle fixtures ([`Fixtures/te
 - [`Coast/`](Coast/): a lighthouse at dusk (16:9), and twelve photographs of one week in the same small fishing town: the harbour, cliffs, beach huts, fishing boats, a market stall, a café table, the view from a train, rock pools, a lane of cottages, a sunset, a bookshop and the lighthouse at night. 1,024 to 1,672 px.
 
 They show no real people or places, and no readable text. Like the portraits, they were made with ChatGPT image generation and are offered under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/).
+
+## Animated SVG
+
+[`Animated SVG/`](Animated%20SVG/) holds animated SVGs for the `Animated SVG` TextBundles: feature tests written for this repository, and about 2,100 openly licensed files from elsewhere (spinners, loaders, weather icons and the W3C SVG 1.1 animation tests), each set with its licence. Its README says where each came from.
