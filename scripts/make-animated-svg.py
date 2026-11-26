@@ -278,22 +278,24 @@ COMPLEX = {"1-orrery": orrery, "2-equaliser": equaliser, "3-assembly": assembly}
 # ---------- Which files move ----------
 
 ANIMATES = re.compile(r"<(animate|animateTransform|animateMotion|set|animateColor)\b|@keyframes|animation\s*:", re.I)
-CHAINED = re.compile(r'begin\s*=\s*"[^"]*([A-Za-z_][\w-]*\.(begin|end)|click|mouse|focus|activate)', re.I)
+# A begin on a tap, a hover or focus. A begin on another animation's begin or
+# end (`a.end-0.5s`) plays: the markdown library's svganim works those out.
+EVENT_BEGIN = re.compile(r'begin\s*=\s*"[^"]*\b(click|mouse\w*|focus\w*|activate|DOMActivate)\b', re.I)
 
 
 def motion(path: Path) -> str:
-    """'still' (drawn still by its author), 'chained' (starts one animation
-    from another's, or from an event, which the iOS player doesn't do yet:
-    some or all of it stays still), or 'animated'."""
+    """'still' (drawn still by its author), 'chained' (waits for a tap, a
+    hover or focus, which an image in a page never gets: some or all of it
+    stays still), or 'animated'."""
     text = path.read_text(errors="ignore")
     if not ANIMATES.search(text):
         return "still"
-    return "chained" if CHAINED.search(text) else "animated"
+    return "chained" if EVENT_BEGIN.search(text) else "animated"
 
 
 STILL_NOTE = "Drawn still by their author: there is nothing in these files to animate, so they should not move."
-CHAINED_NOTE = ("These start one animation from another's beginning or end (`begin=\"a.end\"`), or from a tap or hover. "
-                "The iOS player doesn't do that yet, so some or all of each stays still. They should move once it does.")
+CHAINED_NOTE = ("These start an animation on a tap or a hover (`begin=\"click\"`). An image in a page never gets one, "
+                "on GitHub or here, so some or all of each stays still, as it should.")
 
 
 def sections(files: list[tuple[str, str, Path]], width: int, per_row: int) -> str:
@@ -305,7 +307,7 @@ def sections(files: list[tuple[str, str, Path]], width: int, per_row: int) -> st
     if groups["animated"]:
         out.append(f"### Animated ({len(groups['animated'])})\n\n" + grid(groups["animated"], width, per_row))
     if groups["chained"]:
-        out.append(f"### Not animated yet ({len(groups['chained'])})\n\n{CHAINED_NOTE}\n\n" + grid(groups["chained"], width, per_row))
+        out.append(f"### Waits for a tap or hover ({len(groups['chained'])})\n\n{CHAINED_NOTE}\n\n" + grid(groups["chained"], width, per_row))
     if groups["still"]:
         out.append(f"### Still by design ({len(groups['still'])})\n\n{STILL_NOTE}\n\n" + grid(groups["still"], width, per_row))
     return "\n\n".join(out)
@@ -502,7 +504,7 @@ All {len(files)} Meteocons weather icons in the {style} style, animated with SMI
     assets.update(licence_assets("w3c"))
     said = {
         "animated": "",
-        "chained": "*Chains animations or waits for an event: not played yet on iOS.*\n\n",
+        "chained": "*Waits for a tap, a hover or focus: an image in a page never gets one, so part of it stays still.*\n\n",
         "still": "*No animation in the file.*\n\n",
     }
     rows = "\n\n".join(f"### {p.stem}\n\n{said[motion(p)]}<p>\n{img(p.name, p.stem, 320)}\n</p>" for p in w3c)
