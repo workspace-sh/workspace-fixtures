@@ -323,12 +323,14 @@ def img(src: str, alt: str, width: int) -> str:
 
 
 def grid(files: list[tuple[str, str]], width: int, per_row: int) -> str:
-    """Rows of images, one HTML paragraph per row."""
-    rows = []
-    for i in range(0, len(files), per_row):
-        cells = " ".join(img(src, alt, width) for src, alt in files[i : i + per_row])
-        rows.append(f"<p>\n{cells}\n</p>")
-    return "\n\n".join(rows)
+    """One HTML paragraph of images, which wraps to the page's width.
+
+    A paragraph per fixed-size row would keep the same count in every row
+    however wide the page is; one paragraph fits more in landscape. Lines of
+    `per_row` keep the source readable and are only whitespace when drawn.
+    """
+    lines = [" ".join(img(src, alt, width) for src, alt in files[i : i + per_row]) for i in range(0, len(files), per_row)]
+    return "<p>\n" + "\n".join(lines) + "\n</p>"
 
 
 def name(path: Path) -> str:
