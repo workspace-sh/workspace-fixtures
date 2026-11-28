@@ -1,0 +1,28 @@
+{
+  "fields": [
+    {
+      "id": "f8city",
+      "name": "city",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "id": "f8coords",
+      "name": "coords",
+      "type": "string",
+      "x-action": "places/coords"
+    },
+    {
+      "id": "f8opened",
+      "name": "opened",
+      "type": "string",
+      "x-action": "places/opened"
+    }
+  ],
+  "x-actions": {
+    "places/coords": "{:id :places/coords :on [:edit \"city\"] :fresh \"P30D\" :needs {:fetch [\"nominatim.openstreetmap.org\"]} :fn (fn [{:keys [city]} env ctx] (let [r (first (env/fetch \"https://nominatim.openstreetmap.org/search\" {:q city :format \"json\" :limit 1}))] {:keep (str (get r :lat) \", \" (get r :lon))}))}",
+    "places/opened": "{:id :places/opened :on :open :fn (fn [_ env ctx] {:keep (str \"ran at \" (env/now))})}"
+  }
+}

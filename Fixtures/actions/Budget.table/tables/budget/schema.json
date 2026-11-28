@@ -1,0 +1,14 @@
+{
+  "fields": [
+    {
+      "id": "b8item",
+      "name": "item",
+      "type": "string"
+    },
+    {
+      "id": "b8amount",
+      "name": "amount",
+      "type": "number"
+    }
+  ]
+}
