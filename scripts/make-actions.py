@@ -273,7 +273,8 @@ def main() -> None:
         if f.name != "README.md":
             shutil.rmtree(f) if f.is_dir() else f.unlink()
     write(OUT / "Every Action.md", document("Every Action", in_bundle=False))
-    write(OUT / "Packing.txt", "passport, charger, rain jacket\n")
+    # One line and no newline at its end: an action keeps what it reads as it is, and a newline would split the line it's kept in.
+    write(OUT / "Packing.txt", "passport, charger, rain jacket")
     budget(OUT / "Budget.table")
     write(OUT / "Every Action.canvas", json.dumps(canvas(), indent=2, ensure_ascii=False) + "\n")
     table(OUT / "Every Action.table")
