@@ -1,0 +1,10 @@
+{
+  "format": "table",
+  "formatVersion": 3,
+  "title": "Budget",
+  "tables": [
+    "budget"
+  ],
+  "created_at": "2026-11-28T00:00:00Z",
+  "modified_at": "2026-11-28T00:00:00Z"
+}

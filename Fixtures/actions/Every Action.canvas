@@ -1,0 +1,68 @@
+{
+  "nodes": [
+    {
+      "id": "title",
+      "type": "text",
+      "x": 0,
+      "y": -160,
+      "width": 360,
+      "height": 100,
+      "text": "# Every action, on a canvas\nEach box below is kept by an action."
+    },
+    {
+      "id": "opened",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 360,
+      "height": 100,
+      "text": "Opened: not run yet",
+      "x-action": "canvas/opened"
+    },
+    {
+      "id": "place",
+      "type": "text",
+      "x": 400,
+      "y": 0,
+      "width": 360,
+      "height": 100,
+      "text": "Dublin: not looked up yet",
+      "x-action": "canvas/place"
+    },
+    {
+      "id": "minute",
+      "type": "text",
+      "x": 0,
+      "y": 140,
+      "width": 360,
+      "height": 100,
+      "text": "Every minute: not run yet",
+      "x-action": "canvas/minute"
+    },
+    {
+      "id": "packing",
+      "type": "text",
+      "x": 400,
+      "y": 140,
+      "width": 360,
+      "height": 100,
+      "text": "Packing list: not read yet",
+      "x-action": "canvas/packing"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "title",
+      "fromSide": "bottom",
+      "toNode": "opened",
+      "toSide": "top"
+    }
+  ],
+  "x-actions": {
+    "canvas/opened": "{:id :canvas/opened :on :open :fn (fn [_ env ctx] {:keep (str \"Opened: ran at \" (env/now))})}",
+    "canvas/place": "{:id :canvas/place :on :open :needs {:fetch [\"nominatim.openstreetmap.org\"]} :fn (fn [_ env ctx] (let [r (first (env/fetch \"https://nominatim.openstreetmap.org/search\" {:q \"Dublin\" :format \"json\" :limit 1}))] {:keep (str \"Dublin: \" (get r :lat) \", \" (get r :lon) \" · fetched at \" (env/now))}))}",
+    "canvas/minute": "{:id :canvas/minute :on [:cron \"* * * * *\"] :fn (fn [_ env ctx] {:keep (str \"Every minute: ticked at \" (env/now))})}",
+    "canvas/packing": "{:id :canvas/packing :on [:change \"Packing.txt\"] :needs {:read [\"Packing.txt\"]} :fn (fn [_ env ctx] {:keep (str \"Packing list: \" (env/read \"Packing.txt\") \" · read at \" (env/now))})}"
+  }
+}
